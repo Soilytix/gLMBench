@@ -1,0 +1,21 @@
+# The main environment: the gLMBench core plus the runners for every Hugging Face-format model
+# (LOAM, gLM2, GenomeOcean, ProkBERT, NTv3, Evo 1.5). Evo 2 needs its own environment
+# (envs/evo2.yml).
+#
+#   conda env create -f envs/glmbench.yml
+#   conda activate glmbench
+#   pip install -e ".[hf,data,dev]" -c envs/constraints-paper.txt \
+#       --extra-index-url https://download.pytorch.org/whl/cu126
+#
+# Only for Evo 1.5 (its remote code has no fallback without flash-attn), after torch is in:
+#   pip install ninja packaging wheel
+#   pip install --no-build-isolation flash-attn==2.8.3
+# If no prebuilt wheel fits your system, flash-attn builds from
+# source; that needs a CUDA toolkit matching torch's (12.6) and takes a while. See
+# docs/INSTALL.md.
+name: glmbench
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip

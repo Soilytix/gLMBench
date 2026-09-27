@@ -1,0 +1,19 @@
+# Example spec: a score-only Echo "model". It declares only sequence_loglikelihood, so the
+# `dummy-embed` task returns N/A against it. Pair it with echo-full.yaml to produce a
+# two-model board with an explicit N/A cell.
+adapter: echo
+adapter_version: "0.1.0"
+model:
+  weights_value: "echo-score-only-v0"    # distinct hash from echo-full
+  config:
+    family: echo
+    embedding_dim: 8
+    n_layers: 2
+  capabilities:
+    - sequence_loglikelihood
+weights_digest:
+  strategy: declared
+  value: "echo-score-only-v0"
+runner:
+  backend: local
+  python_exe: null

@@ -1,0 +1,103 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "glmbench"
+version = "0.1.0"
+description = "gLMBench — a standalone, model-agnostic benchmark suite for genomic language models"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Soilytix GmbH" }]
+requires-python = ">=3.11"
+# The core is torch-free: numpy, pandas, pyyaml, pydantic, plus scipy and scikit-learn, which
+# the vendored upstream metric files (RNAGym, DGEB) and the essentiality probe import. Deep-
+# learning dependencies live in the model runners' environments (the `hf` extra, or the
+# separate Evo 2 environment) and are never imported by the core. The exact versions the
+# paper's numbers were produced with are pinned in envs/constraints-paper.txt.
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+    "pydantic>=2.0",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+]
+
+[project.optional-dependencies]
+# Runners for Hugging Face-format models: LOAM (loam-hf), gLM2, GenomeOcean, ProkBERT,
+# NTv3 and Evo 1.5 (Evo 1.5 additionally needs flash-attn; see docs/INSTALL.md).
+hf = [
+    "torch>=2.2.0",
+    "transformers>=4.44",
+    "safetensors",
+    "accelerate",
+    "huggingface_hub",
+    "einops",            # gLM2's remote modeling code
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.4",
+    "mypy>=1.10",
+    "types-PyYAML>=6.0",
+]
+# notebooks/loam_hf_benchmark.ipynb: Jupyter to open it, matplotlib for its layer plots.
+notebook = [
+    "jupyter",
+    "matplotlib",
+]
+# One-time task-data download (scripts/fetch_*). Not needed by the core or by the unit
+# tests, which run on committed tiny fixtures.
+data = [
+    "datasets>=2.14",
+    "huggingface_hub",
+]
+
+[project.scripts]
+glmbench = "glmbench.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Soilytix/gLMBench"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/glmbench"]
+
+[tool.hatch.build]
+# Fetched task data can be hundreds of MB; a wheel built from a populated tree must not
+# sweep it in. The one committed CSV (RNAGym's reference sheet) is small and stays.
+exclude = [
+    "src/glmbench/tasks/data/bacbench_essentiality/*.csv",
+    "src/glmbench/tasks/data/dgeb_ec_dna/*.csv",
+    "src/glmbench/tasks/data/rnagym/processed_DMS_files/**",
+]
+
+[tool.ruff]
+src = ["src"]
+line-length = 100
+target-version = "py311"
+# Vendored upstream code stays byte-identical to its source: never lint or format it.
+extend-exclude = ["src/glmbench/tasks/_vendor"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+warn_return_any = false
+files = ["src/glmbench"]
+# Vendored upstream code keeps its original, untyped form.
+exclude = ["src/glmbench/tasks/_vendor/"]
+
+[[tool.mypy.overrides]]
+module = "glmbench.tasks._vendor.*"
+follow_imports = "skip"
+ignore_errors = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"

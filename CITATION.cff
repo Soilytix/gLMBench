@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: >-
+  If you use gLMBench, please cite it as below. The benchmark tasks are the work of their
+  authors: please also cite BacBench, DGEB and RNAGym (listed under references) for the
+  tasks you use. The citation of the LOAM manuscript will be added here when the preprint
+  is available.
+title: "gLMBench: a model-agnostic benchmark harness for genomic language models"
+type: software
+authors:
+  - name: "Soilytix GmbH"
+license: Apache-2.0
+repository-code: "https://github.com/Soilytix/gLMBench"
+version: "0.1.0"
+keywords:
+  - genomic language models
+  - benchmark
+  - bacterial genomics
+  - DNA foundation models
+references:
+  - type: article
+    title: "BacBench: Evaluating Genomic Language Models for Bacteria"
+    authors:
+      - family-names: Wiatrak
+        given-names: Maciej
+      - name: "et al."
+    repository-code: "https://github.com/macwiatrak/Bacbench"
+  - type: article
+    title: "Diverse Genomic Embedding Benchmark for Functional Evaluation across the Tree of Life"
+    authors:
+      - family-names: West-Roberts
+        given-names: Jacob
+      - family-names: Kravitz
+        given-names: Joshua
+      - family-names: Jha
+        given-names: Nishant
+      - family-names: Cornman
+        given-names: Andre
+      - family-names: Hwang
+        given-names: Yunha
+    journal: bioRxiv
+    year: 2024
+    doi: 10.1101/2024.07.10.602933
+  - type: article
+    title: "RNAGym: Large-scale Benchmarks for RNA Fitness and Structure Prediction"
+    authors:
+      - family-names: Notin
+        given-names: Pascal
+      - name: "et al."
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.06.16.660049

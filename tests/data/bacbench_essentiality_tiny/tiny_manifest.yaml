@@ -1,0 +1,23 @@
+# Tiny synthetic fixture for the bacbench-essentiality task (committed; CI runs here).
+# Essential genes are A/C-rich, non-essential T/G-rich → a composition-aware probe separates them.
+source: "synthetic tiny fixture (not real DEG data)"
+promoter_len: 128
+splits:
+  - name: train
+    file: tiny_train.csv
+    sha256: 726283daf0be8ded48e0d32c650287bd0451441b799b243636a9d64aba484042
+    n_genomes: 3
+    n_genes: 30
+    n_essential: 14
+  - name: validation
+    file: tiny_validation.csv
+    sha256: e9c208b87957e451aa81b13f86a2e2b92fc01c8553d72686ebd3c34d82bf4a3c
+    n_genomes: 1
+    n_genes: 6
+    n_essential: 3
+  - name: test
+    file: tiny_test.csv
+    sha256: 916bdc4fb4f839fe14d4e9354ff4cde8de8b4baee751201f810b21a0e0641575
+    n_genomes: 3
+    n_genes: 21
+    n_essential: 8

@@ -1,0 +1,22 @@
+RNAGym `performance_fitness.py`: vendored verbatim (the metric authority)
+=========================================================================
+
+Source  : MarksLab-DasLab/RNAGym
+URL     : https://github.com/MarksLab-DasLab/RNAGym/blob/114830cabba1a95817d97813c14192e09263ef14/fitness/performance_fitness.py
+Commit  : 114830cabba1a95817d97813c14192e09263ef14
+License : MIT (see LICENSE in this directory; Copyright (c) 2024 RNAGym team)
+Cite    : Notin et al., "RNAGym: Large-scale Benchmarks for RNA Fitness and Structure
+          Prediction", bioRxiv 2025.06.16.660049.
+
+This file is a byte-identical copy of upstream's `performance_fitness.py` at the commit
+above. It is the single source of truth for gLMBench's RNAGym metric reductions: the
+per-assay absolute Spearman / median-split symmetric AUC / absolute MCC
+(`calculate_metrics`) and the type-mean macro (`calculate_RNA_types_averages_with_se`).
+`glmbench/tasks/metrics.py` is a thin wrapper that calls these functions and re-derives none
+of their math, so a bug in a re-implemented reduction cannot silently corrupt a score.
+
+Rules:
+  - Copy, never edit. The sha256 in `SHA256SUMS` is checked by a unit test
+    (`tests/unit/test_phase3.py`), so an edit to the copy fails loudly.
+  - Re-vendoring from a newer upstream commit is the only sanctioned change; it bumps the
+    task version and the recorded sha256.

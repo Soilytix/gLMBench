@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [],
+  "normalizer": {
+    "type": "Sequence",
+    "normalizers": [
+      {
+        "type": "Replace",
+        "pattern": {
+          "Regex": "[^ACGTNRYSWKMBDHVa-z]"
+        },
+        "content": " "
+      },
+      {
+        "type": "Replace",
+        "pattern": {
+          "Regex": "[a-z]"
+        },
+        "content": "REPEAT"
+      }
+    ]
+  },
+  "pre_tokenizer": {
+    "type": "Split",
+    "pattern": {
+      "Regex": "REPEAT|[\\s\\S]"
+    },
+    "behavior": "Isolated",
+    "invert": false
+  },
+  "post_processor": null,
+  "decoder": {
+    "type": "Sequence",
+    "decoders": [
+      {
+        "type": "Replace",
+        "pattern": {
+          "String": "REPEAT"
+        },
+        "content": "n"
+      },
+      {
+        "type": "Fuse"
+      }
+    ]
+  },
+  "model": {
+    "type": "WordLevel",
+    "vocab": {
+      "PAD": 0,
+      "BOS": 1,
+      "EOS": 2,
+      "MASK": 3,
+      "SEP": 4,
+      "UNK": 5,
+      "REPEAT": 6,
+      "CONTIG": 7,
+      "A": 8,
+      "C": 9,
+      "G": 10,
+      "T": 11,
+      "N": 12,
+      "R": 13,
+      "Y": 14,
+      "S": 15,
+      "W": 16,
+      "K": 17,
+      "M": 18,
+      "B": 19,
+      "D": 20,
+      "H": 21,
+      "V": 22,
+      "FIM_PREFIX": 23,
+      "FIM_MIDDLE": 24,
+      "FIM_SUFFIX": 25,
+      "CTRL_00": 26,
+      "CTRL_01": 27,
+      "CTRL_02": 28,
+      "CTRL_03": 29,
+      "CTRL_04": 30,
+      "CTRL_05": 31,
+      "CTRL_06": 32,
+      "CTRL_07": 33,
+      "CTRL_08": 34,
+      "CTRL_09": 35,
+      "CTRL_10": 36,
+      "CTRL_11": 37,
+      "CTRL_12": 38,
+      "CTRL_13": 39,
+      "CTRL_14": 40,
+      "CTRL_15": 41,
+      "CTRL_16": 42,
+      "CTRL_17": 43,
+      "CTRL_18": 44,
+      "CTRL_19": 45,
+      "CTRL_20": 46,
+      "CTRL_21": 47,
+      "CTRL_22": 48,
+      "CTRL_23": 49,
+      "CTRL_24": 50,
+      "CTRL_25": 51,
+      "CTRL_26": 52,
+      "CTRL_27": 53,
+      "CTRL_28": 54,
+      "CTRL_29": 55,
+      "CTRL_30": 56,
+      "CTRL_31": 57
+    },
+    "unk_token": "UNK"
+  }
+}

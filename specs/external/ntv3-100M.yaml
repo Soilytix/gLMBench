@@ -1,0 +1,42 @@
+# NTv3-100M (InstaDeep Nucleotide Transformer v3): a U-Net masked-LM encoder (conv-down ->
+# transformer torso -> deconv-up -> LM head), custom NTv3PreTrained. Served in-process with
+# torch + transformers >= 5. The Hub repo is gated: accept its terms and log in first.
+#
+# Loaded with trust_remote_code; the auto_map is cross-repo (the modeling code lives in a
+# separate repo), so both `revision` (weights) and `code_revision` (code) are pinned.
+# Masked-LM encoder: rnagym-dms uses masked-marginal LLR. Capabilities:
+# {tokenize, embedding, masked_marginal_llr}.
+#
+# The U-Net needs length % 128 == 0 and its torso runs with no attention mask, so the runner
+# pads each sequence to its own next multiple of 128 and batches equal lengths only, which
+# keeps scores and embeddings batch-invariant.
+adapter: ntv3
+adapter_version: "0.1.0"
+display_name: "NTv3-100M"
+model:
+  checkpoint: "InstaDeepAI/NTv3_100M_pre"     # Hub repo id (or a local download dir)
+  n_layers: 6                                  # config.json `num_layers`; not hashed
+  num_downsamples: 7                           # the sweep yields 2*7 + 6 = 20 mixed-resolution states
+  tokenizer: null                              # null -> same as checkpoint
+  revision: "5c685dca15891f5c5b80e0c930e23b87a217e441"        # weights commit (load + hash key)
+  code_revision: "0ecff3637f0d3ba5b686d1095083218157c2ca34"   # cross-repo remote code
+  # fp32 is what NTv3 requires: its U-Net paths assume fp32 parameters and pin their own
+  # per-block compute dtypes (autocast to bf16 is a no-op), so the runner never casts.
+  dtype: float32
+  trust_remote_code: true                      # custom NTv3 architecture
+  pool_include_special: false                  # exclude the padding region from pooling
+  pad_multiple: 128                            # U-Net requirement = 2^num_downsamples
+  # max_context is in nucleotides (tasks window by it). NTv3's window is far larger but
+  # memory-bound; 12288 = 96 x 128 is a conservative default at 1 nt/token.
+  max_context: 12288
+  max_tokens: 12288
+  batch_size: 4
+weights_digest:
+  strategy: hf_revision                        # pin the commit; no weight read
+  value: "5c685dca15891f5c5b80e0c930e23b87a217e441"
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"   # an env with glmbench + torch + transformers
+  gpus: "0"                                    # "0"/"auto" -> cuda; "cpu"/"" -> cpu
+  scratch_dir: null
+  extra: {}

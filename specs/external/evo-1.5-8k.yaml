@@ -1,0 +1,39 @@
+# Evo 1.5 (evo-design/evo-1.5-8k-base, 7B): StripedHyena, byte-level, causal LM. Served
+# in-process with torch + transformers + flash-attn (flash-attn is required: the remote code
+# has no SDPA fallback; see docs/INSTALL.md).
+#
+# StripedHyena is a custom architecture, so trust_remote_code is forced, and its modeling code
+# lives in a separate repo (togethercomputer/evo-1-131k-base, cross-repo auto_map). Both are
+# pinned: `revision` (weights) and `code_revision` (that code repo; the commit of its
+# `1.1_fix` branch).
+#
+# Evo 1.5's outputs are not batch-invariant (it takes no attention mask, and its long
+# convolutions see the padding), so its numbers depend on batch_size and token_budget below:
+# keep them to reproduce the paper.
+adapter: evo
+adapter_version: "0.1.0"
+display_name: "Evo 1.5 (8k, 7B)"
+model:
+  checkpoint: "evo-design/evo-1.5-8k-base"
+  revision: "99a9a4df722662b03d2a79b1770c3150421aa9e9"        # weights commit
+  code_revision: "c206aab77ae5967a069c4200ecb1858588528c9d"   # togethercomputer/evo-1-131k-base @ 1.1_fix
+  trust_remote_code: true                                      # custom StripedHyena architecture
+  dtype: bfloat16
+  score_prefix: eos          # Evo prepends eod (id 0) as causal context
+  eod_token_id: 0            # byte tokenizer eod/eos id
+  max_context: 8192          # nucleotides (1 nt/token; the trained window)
+  max_tokens: 8192           # hard runner token cap
+weights_digest:
+  strategy: hf_revision      # keyed to the exact weights commit (no 13 GB read)
+  value: "99a9a4df722662b03d2a79b1770c3150421aa9e9"
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"   # an env with glmbench + torch + transformers + flash-attn
+  gpus: "0"                  # choose the physical GPU with CUDA_VISIBLE_DEVICES
+  scratch_dir: null
+  extra:
+    # token_budget caps rows x padded length. 8192 = one full-length row: an all-layer pass
+    # (the sweep tasks) holds every hooked layer on the GPU and stacks them, which needs a
+    # second full copy, so a larger budget needs more than 48 GB of GPU memory.
+    batch_size: 64          # row cap only; token_budget is what binds
+    token_budget: 8192

@@ -1,0 +1,16 @@
+{
+  "bos_token": "BOS",
+  "clean_up_tokenization_spaces": false,
+  "eos_token": "EOS",
+  "loam_iupac_policy": "distinct",
+  "loam_soft_mask_policy": "mask",
+  "loam_tokenizer_hash": "sha256:358baf886ca8c0d51ccac77ff920fae7b6d75137372c7e432ba5c990baa29306",
+  "loam_tokenizer_name": "nucleotide",
+  "mask_token": "MASK",
+  "model_max_length": 8192,
+  "pad_token": "PAD",
+  "sep_token": "SEP",
+  "split_special_tokens": true,
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "unk_token": "UNK"
+}

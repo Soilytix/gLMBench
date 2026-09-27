@@ -1,0 +1,14 @@
+name: loam_paper
+version: "1.0"
+description: >
+  The gLMBench rows reported in the LOAM manuscript: bacterial gene essentiality (BacBench)
+  and enzyme-commission classification (DGEB, DNA arm), each as a last-layer probe and a
+  per-layer sweep, plus zero-shot RNAGym prokaryotic deep mutational scanning. The two probe
+  tasks share one forward pass per corpus: the sweep embeds every layer once and the
+  last-layer row is read from it.
+tasks:
+  - bacbench-essentiality
+  - bacbench-essentiality-layer-sweep
+  - dgeb-ec-classification-dna
+  - dgeb-ec-classification-dna-layer-sweep
+  - rnagym-dms

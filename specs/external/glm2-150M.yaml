@@ -1,0 +1,26 @@
+# gLM2-150M: the smaller TattaBio gLM2 checkpoint (dim 640, depth 30). Same serving path as
+# specs/external/glm2-650M.yaml; only the checkpoint, revision and batch size differ.
+adapter: glm2
+adapter_version: "0.1.0"
+display_name: "gLM2-150M"
+model:
+  checkpoint: "tattabio/gLM2_150M"     # Hub repo id (or a local download dir)
+  n_layers: 30                          # config.json `depth`; describes the weights, not hashed
+  tokenizer: null                       # null -> same as checkpoint
+  revision: "93c88529115476b27bdd85da14311779114a8a64"   # pinned commit (load + hash key)
+  dtype: bfloat16                       # the runner uses fp32 on CPU
+  trust_remote_code: true               # custom gLM2 architecture
+  strand_prefix: "+"                    # "+" | "-" | "none": leading strand marker
+  pool_include_special: false           # exclude the strand marker from pooling
+  max_context: 4095                     # nucleotides; 4096 tokens minus the strand marker
+  max_tokens: 4096                      # gLM2's trained token window
+  batch_size: 16
+weights_digest:
+  strategy: hf_revision
+  value: "93c88529115476b27bdd85da14311779114a8a64"
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"   # an env with glmbench + torch + transformers + einops
+  gpus: "0"
+  scratch_dir: null
+  extra: {}

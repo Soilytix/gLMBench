@@ -1,0 +1,17 @@
+# Tiny synthetic fixture for the dgeb-ec-classification-dna task (committed; CI runs here).
+# 3 composition-separable EC classes (A/C/G-rich) → a composition-aware probe learns them.
+# NOT real DGEB EC data.
+source: "synthetic tiny fixture (not real DGEB EC data)"
+revision: "synthetic"
+n_label_classes: 3
+splits:
+  - name: train
+    file: tiny_train.csv
+    sha256: aa8055b396c838236e197c043a2d3c1ca27838867cd88d8c4c86ef2e8649946e
+    n_rows: 12
+    n_classes: 3
+  - name: test
+    file: tiny_test.csv
+    sha256: 3ae84b7fa783042ad511c025155e80fbeb74f5c5712865460068dab04e277c9c
+    n_rows: 6
+    n_classes: 3

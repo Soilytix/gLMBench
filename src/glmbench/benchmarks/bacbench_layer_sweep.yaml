@@ -1,0 +1,5 @@
+name: bacbench_layer_sweep
+version: "1.0"
+description: "BacBench gene essentiality swept over embedding layers (one forward pass, probe per layer)."
+tasks:
+  - bacbench-essentiality-layer-sweep   # set GLMBENCH_BACBENCH_LAYER_SWEEP_LAYERS to restrict (else all layers)

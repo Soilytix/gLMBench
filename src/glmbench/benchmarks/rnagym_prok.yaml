@@ -1,0 +1,5 @@
+name: rnagym_prok
+version: "1.0"
+description: "RNAGym prokaryotic protein-coding DMS (11 mRNA-coding ∩ PROK assays)."
+tasks:
+  - rnagym-dms                     # registry keys; ordered

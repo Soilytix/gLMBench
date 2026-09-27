@@ -1,0 +1,9 @@
+name: dummy_bench
+version: "1.0"
+description: >-
+  A model-free 2-task smoke benchmark: `dummy` needs sequence
+  log-likelihood, `dummy-embed` needs embeddings. Run against a score-only adapter,
+  `dummy-embed` yields an N/A cell — exercising the full lifecycle + leaderboard.
+tasks:
+  - dummy
+  - dummy-embed

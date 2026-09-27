@@ -1,0 +1,830 @@
+{
+  "adapter_name": "prokbert",
+  "adapter_version": "0.2.0",
+  "benchmark": {
+    "name": "full",
+    "version": "1.0"
+  },
+  "describe": {
+    "adapter_version": "0.2.0",
+    "arch": {
+      "family": "prokbert"
+    },
+    "attn_implementation": null,
+    "backend": "local",
+    "batch_size": 16,
+    "capabilities": [
+      "embedding",
+      "masked_marginal_llr",
+      "tokenize"
+    ],
+    "checkpoint": "neuralbioinfo/prokbert-mini",
+    "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+    "device": "auto",
+    "dtype": "bfloat16",
+    "embedding_dim": 0,
+    "embedding_real_tokens": "embedding: pool_include_special=False (default) pools over content (k-mer) tokens only, EXCLUDING [CLS]/[SEP]; True includes them. pool='cls' reads the [CLS] position. Layers via output_hidden_states (n_layers+1 = 7 states; the runner resolves layers against the actual tuple length). pool='none' returns per-content-token vectors + token_spans that are k-mer windows (overlapping \u2014 their union covers len(seq); a partition is impossible for overlapping k-mers).",
+    "gpus": "<redacted>",
+    "image": null,
+    "max_context": 1020,
+    "max_tokens": 1024,
+    "n_layers": 6,
+    "name": "prokbert",
+    "objective": "masked-LM bidirectional encoder (ProkBertForMaskedLM). Embeddings + masked-marginal LLR variant scoring (MASKED_MARGINAL_LLR). SEQUENCE_LOGLIKELIHOOD / PER_TOKEN_LOGPROBS / LOGPROB_EMBEDDING are N/A (causal likelihood undefined for an MLM) \u2014 clean first-class N/A; variant-effect tasks fall back to the masked-marginal LLR path.",
+    "pool_include_special": false,
+    "python_exe": "<redacted>",
+    "readout": "block_output",
+    "readout_adapter_version": "0.2.0",
+    "readout_evidence": "probed",
+    "readout_note": "Pre-LN BERT encoder with a final encoder LayerNorm outside the blocks: hidden_states[-1] measured rel_delta 3.14 / cos 0.948 away from the last block's raw output, so the runner hooks the block. The 'post-LN encoders need no change' rule of thumb does NOT hold here.",
+    "revision": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc",
+    "token_budget": null,
+    "tokenizer": "neuralbioinfo/prokbert-mini",
+    "tokenizer_kind": "LCATokenizer \u2014 OVERLAPPING k-mer (Local Context-Aware). mini k=6/shift=1 \u21d2 L nt \u2192 L\u22125 content 6-mer tokens (windows slide by 1, heavily overlapping), wrapped [CLS]\u2026[SEP] ([CLS]=2,[SEP]=3,[MASK]=4,[PAD]=0,[UNK]=1). is_fast=False (no offset_mapping); non-ACGT windows \u2192 [UNK]. nt/token = k (NOT 1) \u21d2 logprob_embedding N/A; per-token is per-k-mer-token.",
+    "trust_remote_code": true
+  },
+  "glmbench_version": "0.1.0",
+  "model_hash": "glmb:35874e63ceb426b852f4cece",
+  "model_spec": {
+    "adapter": "prokbert",
+    "adapter_version": "0.1.0",
+    "display_name": "ProkBERT-mini",
+    "model": {
+      "batch_size": 16,
+      "checkpoint": "neuralbioinfo/prokbert-mini",
+      "code_revision": "366d9336b6b89d7c1feddf56d9b01be8065ccc43",
+      "dtype": "bfloat16",
+      "max_context": 1020,
+      "max_tokens": 1024,
+      "n_layers": 6,
+      "pool_include_special": false,
+      "revision": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc",
+      "tokenizer": null,
+      "trust_remote_code": true
+    },
+    "runner": {
+      "backend": "local",
+      "extra": {},
+      "gpus": "<redacted>",
+      "image": null,
+      "python_exe": "<redacted>",
+      "scratch_dir": null
+    },
+    "weights_digest": {
+      "strategy": "hf_revision",
+      "value": "feb2520a43cd9cdb5b3d8477e47209dbcb55d1dc"
+    }
+  },
+  "provenance": {
+    "data_manifest_hashes": {},
+    "host": "<redacted>",
+    "runner": {
+      "backend": "local",
+      "extra": {},
+      "gpus": "<redacted>",
+      "image": null,
+      "python_exe": "<redacted>",
+      "scratch_dir": null
+    },
+    "timestamp": "2026-08-05T16:11:46.931559+00:00"
+  },
+  "readout": "block_output",
+  "readout_adapter_version": "0.2.0",
+  "readout_evidence": "probed",
+  "readout_note": "Pre-LN BERT encoder with a final encoder LayerNorm outside the blocks: hidden_states[-1] measured rel_delta 3.14 / cos 0.948 away from the last block's raw output, so the runner hooks the block. The 'post-LN encoders need no change' rule of thumb does NOT hold here.",
+  "tasks": [
+    {
+      "metadata": {
+        "aggregation": "macro mean (primary) + median across test genomes",
+        "embedding_dim": 384,
+        "feature_source": "embedding (hidden-state, layers='last', pool='mean')",
+        "max_context": null,
+        "n_excluded_single_class": 0,
+        "n_test_genomes": 9,
+        "n_test_genomes_scored": 9,
+        "n_train_genes": 136278,
+        "n_train_genomes": 37,
+        "n_windows_embedded": 259403,
+        "per_genome": [
+          {
+            "auprc": 0.37172108717750485,
+            "auroc": 0.811299179557605,
+            "genome_name": "DEG1001",
+            "genus": "Bacillus",
+            "n_essential": 271,
+            "n_genes": 4237,
+            "scored": true
+          },
+          {
+            "auprc": 0.37096976349422395,
+            "auroc": 0.6748935890233472,
+            "genome_name": "DEG1003",
+            "genus": "Vibrio",
+            "n_essential": 536,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.8337123173328824,
+            "auroc": 0.6141941143298731,
+            "genome_name": "DEG1006",
+            "genus": "Mycoplasma",
+            "n_essential": 377,
+            "n_genes": 504,
+            "scored": true
+          },
+          {
+            "auprc": 0.6418794886897491,
+            "auroc": 0.7193136791058018,
+            "genome_name": "DEG1014",
+            "genus": "Mycoplasma",
+            "n_essential": 296,
+            "n_genes": 753,
+            "scored": true
+          },
+          {
+            "auprc": 0.38340346551995563,
+            "auroc": 0.7890629688482543,
+            "genome_name": "DEG1029",
+            "genus": "Shewanella",
+            "n_essential": 403,
+            "n_genes": 4207,
+            "scored": true
+          },
+          {
+            "auprc": 0.34372812270830827,
+            "auroc": 0.764543779492428,
+            "genome_name": "DEG1041",
+            "genus": "Rhodopseudomonas",
+            "n_essential": 538,
+            "n_genes": 4904,
+            "scored": true
+          },
+          {
+            "auprc": 0.11776655680215038,
+            "auroc": 0.5689552712680899,
+            "genome_name": "DEG1047",
+            "genus": "Bacillus",
+            "n_essential": 488,
+            "n_genes": 5419,
+            "scored": true
+          },
+          {
+            "auprc": 0.437564193376367,
+            "auroc": 0.8094998770173514,
+            "genome_name": "DEG1067",
+            "genus": "Vibrio",
+            "n_essential": 327,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.7302356196834217,
+            "auroc": 0.7152309668275831,
+            "genome_name": "DEG1068",
+            "genus": "Mycoplasma",
+            "n_essential": 337,
+            "n_genes": 672,
+            "scored": true
+          }
+        ],
+        "probe": "sklearn.LogisticRegression(StandardScaler)+re-derivation",
+        "probe_C": 1.0,
+        "probe_seed": 1,
+        "scoring_method": "embedding",
+        "task_version": "1.0",
+        "threshold": 0.5
+      },
+      "metrics": {
+        "accuracy": 0.87504518181161,
+        "f1": 0.12370088719898606,
+        "fn": 3329.0,
+        "fp": 128.0,
+        "macro_mean_auprc": 0.4701089571982847,
+        "macro_mean_auroc": 0.7185548250522593,
+        "macro_median_auprc": 0.38340346551995563,
+        "macro_median_auroc": 0.7193136791058018,
+        "n_test_genes": 27666.0,
+        "n_test_genomes_scored": 9.0,
+        "precision": 0.6559139784946236,
+        "recall": 0.06828995242093479,
+        "specificity": 0.994687253559125,
+        "tn": 23965.0,
+        "tp": 244.0
+      },
+      "primary_metric": "macro_mean_auroc",
+      "status": "ok",
+      "task": "bacbench-essentiality"
+    },
+    {
+      "metadata": {
+        "aggregation": "macro mean (primary) + median across test genomes",
+        "best_layer": 4,
+        "best_layer_selection": {
+          "considered_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "excluded_layers": [],
+          "exclusion_rule": null
+        },
+        "depth_health": {
+          "cos": [
+            null,
+            0.25626441222997604,
+            0.7087807151594394,
+            0.8802649971019061,
+            0.9158410844278313,
+            0.8933410118678062,
+            0.9056607425248919
+          ],
+          "degenerate_layers": [],
+          "degenerate_rms_abs": 1e-12,
+          "degenerate_rms_rel": 0.0,
+          "delta": [
+            null,
+            0.9707085739385412,
+            0.7469837951210336,
+            0.5119131389172823,
+            0.4732463200750231,
+            0.5244672772244443,
+            0.4536260534667518
+          ],
+          "dtype": "bfloat16 (assumed)",
+          "frozen_layers": [],
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "max_rms": 0.8591475533190177,
+          "n_sequences": 4096,
+          "notes": [
+            "pooled over 4096 of 163944 sequences (evenly spaced, deterministic) \u2014 these are corpus-level averages and the full stack is too large to promote to float64."
+          ],
+          "ratio_min": 0.4536260534667518,
+          "ratio_min_layer": 6,
+          "rel_std": [
+            0.3253527193187416,
+            0.6301680214951625,
+            0.5871171015728294,
+            0.5610652916504856,
+            0.49838245440099904,
+            0.43339200612100676,
+            0.5763167376933782
+          ],
+          "rms": [
+            0.015618471979285382,
+            0.08458805626319678,
+            0.1812261384484993,
+            0.264972365520063,
+            0.3987486754077303,
+            0.6415707477277376,
+            0.8591475533190177
+          ],
+          "unit_roundoff": 0.00390625
+        },
+        "depth_health_measured": true,
+        "embedding_dim": 384,
+        "feature_source": "embedding hidden states (per-layer sweep, pool='mean')",
+        "max_context": null,
+        "n_excluded_single_class": 0,
+        "n_test_genomes": 9,
+        "n_test_genomes_scored": 9,
+        "n_train_genes": 136278,
+        "n_train_genomes": 37,
+        "n_windows_embedded": 259403,
+        "per_genome": [
+          {
+            "auprc": 0.39637814840389457,
+            "auroc": 0.8311031219238062,
+            "genome_name": "DEG1001",
+            "genus": "Bacillus",
+            "n_essential": 271,
+            "n_genes": 4237,
+            "scored": true
+          },
+          {
+            "auprc": 0.37564094077771254,
+            "auroc": 0.6829376768244231,
+            "genome_name": "DEG1003",
+            "genus": "Vibrio",
+            "n_essential": 536,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.840750809892178,
+            "auroc": 0.6317592263831743,
+            "genome_name": "DEG1006",
+            "genus": "Mycoplasma",
+            "n_essential": 377,
+            "n_genes": 504,
+            "scored": true
+          },
+          {
+            "auprc": 0.6528018367449436,
+            "auroc": 0.7301067478857415,
+            "genome_name": "DEG1014",
+            "genus": "Mycoplasma",
+            "n_essential": 296,
+            "n_genes": 753,
+            "scored": true
+          },
+          {
+            "auprc": 0.3892353291509529,
+            "auroc": 0.7945704273678225,
+            "genome_name": "DEG1029",
+            "genus": "Shewanella",
+            "n_essential": 403,
+            "n_genes": 4207,
+            "scored": true
+          },
+          {
+            "auprc": 0.34031347232534676,
+            "auroc": 0.7525241516483404,
+            "genome_name": "DEG1041",
+            "genus": "Rhodopseudomonas",
+            "n_essential": 538,
+            "n_genes": 4904,
+            "scored": true
+          },
+          {
+            "auprc": 0.12036163931197844,
+            "auroc": 0.5858561260144087,
+            "genome_name": "DEG1047",
+            "genus": "Bacillus",
+            "n_essential": 488,
+            "n_genes": 5419,
+            "scored": true
+          },
+          {
+            "auprc": 0.4342439426600869,
+            "auroc": 0.8075776679003666,
+            "genome_name": "DEG1067",
+            "genus": "Vibrio",
+            "n_essential": 327,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.7173377876409167,
+            "auroc": 0.7082421719296692,
+            "genome_name": "DEG1068",
+            "genus": "Mycoplasma",
+            "n_essential": 337,
+            "n_genes": 672,
+            "scored": true
+          }
+        ],
+        "per_layer": [
+          {
+            "layer": 0,
+            "macro_mean_auprc": 0.35840009958787594,
+            "macro_mean_auroc": 0.6417444006503269,
+            "macro_median_auroc": 0.6386761487964989,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 1,
+            "macro_mean_auprc": 0.4432785277750865,
+            "macro_mean_auroc": 0.6976519022124159,
+            "macro_median_auroc": 0.6907120468389615,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 2,
+            "macro_mean_auprc": 0.447259553446014,
+            "macro_mean_auroc": 0.6984114125273387,
+            "macro_median_auroc": 0.680155538470637,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 3,
+            "macro_mean_auprc": 0.46454660926973457,
+            "macro_mean_auroc": 0.7153241867324573,
+            "macro_median_auroc": 0.7079809568868649,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 4,
+            "macro_mean_auprc": 0.4741182118786678,
+            "macro_mean_auroc": 0.7249641464308614,
+            "macro_median_auroc": 0.7301067478857415,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 5,
+            "macro_mean_auprc": 0.4672022244218291,
+            "macro_mean_auroc": 0.7178582073333732,
+            "macro_median_auroc": 0.7105009079232916,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 6,
+            "macro_mean_auprc": 0.4701089571982847,
+            "macro_mean_auroc": 0.7185548250522593,
+            "macro_median_auroc": 0.7193136791058018,
+            "n_test_genomes_scored": 9
+          }
+        ],
+        "probe": "sklearn.LogisticRegression(StandardScaler)+re-derivation",
+        "probe_C": 1.0,
+        "probe_seed": 1,
+        "scoring_method": "embedding",
+        "swept_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "task_version": "1.0",
+        "threshold": 0.5
+      },
+      "metrics": {
+        "accuracy": 0.8751174727101858,
+        "best_layer": 4.0,
+        "f1": 0.12108878148053931,
+        "fn": 3335.0,
+        "fp": 120.0,
+        "layer_0_macro_mean_auprc": 0.35840009958787594,
+        "layer_0_macro_mean_auroc": 0.6417444006503269,
+        "layer_1_macro_mean_auprc": 0.4432785277750865,
+        "layer_1_macro_mean_auroc": 0.6976519022124159,
+        "layer_2_macro_mean_auprc": 0.447259553446014,
+        "layer_2_macro_mean_auroc": 0.6984114125273387,
+        "layer_3_macro_mean_auprc": 0.46454660926973457,
+        "layer_3_macro_mean_auroc": 0.7153241867324573,
+        "layer_4_macro_mean_auprc": 0.4741182118786678,
+        "layer_4_macro_mean_auroc": 0.7249641464308614,
+        "layer_5_macro_mean_auprc": 0.4672022244218291,
+        "layer_5_macro_mean_auroc": 0.7178582073333732,
+        "layer_6_macro_mean_auprc": 0.4701089571982847,
+        "layer_6_macro_mean_auroc": 0.7185548250522593,
+        "macro_mean_auprc": 0.4741182118786678,
+        "macro_mean_auroc": 0.7249641464308614,
+        "macro_median_auprc": 0.39637814840389457,
+        "macro_median_auroc": 0.7301067478857415,
+        "n_test_genes": 27666.0,
+        "n_test_genomes_scored": 9.0,
+        "precision": 0.664804469273743,
+        "recall": 0.06661069129582983,
+        "specificity": 0.9950193002116797,
+        "tn": 23973.0,
+        "tp": 238.0
+      },
+      "primary_metric": "macro_mean_auroc",
+      "status": "ok",
+      "task": "bacbench-essentiality-layer-sweep"
+    },
+    {
+      "metadata": {
+        "embedding_dim": 384,
+        "feature_source": "embedding (hidden-state, layer=6, pool='mean')",
+        "layer": 6,
+        "max_context": null,
+        "max_iter": 1000,
+        "n_classes_test": 128,
+        "n_classes_train": 128,
+        "n_test": 128,
+        "n_test_overflow": 77,
+        "n_train": 512,
+        "n_train_overflow": 301,
+        "n_windows_embedded": 1374,
+        "overflow_strategy": "window",
+        "pool": "mean",
+        "primary_metric_note": "macro-F1 (f1_score average='macro'), DGEB EC metric",
+        "probe": "vendored DGEB logRegClassificationEvaluator (sklearn)",
+        "probe_seed": 42,
+        "scoring_method": "embedding",
+        "standard_scale": false,
+        "task_version": "1.0"
+      },
+      "metrics": {
+        "accuracy": 0.109375,
+        "f1": 0.08645833333333333,
+        "n_classes": 128.0,
+        "n_test": 128.0,
+        "n_train": 512.0
+      },
+      "primary_metric": "f1",
+      "status": "ok",
+      "task": "dgeb-ec-classification-dna"
+    },
+    {
+      "metadata": {
+        "best_layer": 6,
+        "best_layer_selection": {
+          "considered_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "excluded_layers": [],
+          "exclusion_rule": null
+        },
+        "depth_health": {
+          "cos": [
+            null,
+            0.25973258506885355,
+            0.6953811415303501,
+            0.8760331656368683,
+            0.9254672040249932,
+            0.8944954102276022,
+            0.9141465204553207
+          ],
+          "degenerate_layers": [],
+          "degenerate_rms_abs": 1e-12,
+          "degenerate_rms_rel": 0.0,
+          "delta": [
+            null,
+            0.9696696005542648,
+            0.760545729671833,
+            0.5254840105395636,
+            0.4572341655578358,
+            0.5333520465747668,
+            0.43222709166237244
+          ],
+          "dtype": "bfloat16 (assumed)",
+          "frozen_layers": [],
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "max_rms": 0.8722736538195022,
+          "n_sequences": 512,
+          "notes": [],
+          "ratio_min": 0.43222709166237244,
+          "ratio_min_layer": 6,
+          "rel_std": [
+            0.28694477335381,
+            0.5997816794936467,
+            0.5596967084101088,
+            0.515274989602562,
+            0.4559962558515329,
+            0.37846096446112826,
+            0.5098919482351147
+          ],
+          "rms": [
+            0.01521344514143095,
+            0.08094171561866109,
+            0.17892269790481097,
+            0.26919567989572146,
+            0.4021538517576914,
+            0.6682061735239835,
+            0.8722736538195022
+          ],
+          "unit_roundoff": 0.00390625
+        },
+        "depth_health_measured": true,
+        "embedding_dim": 384,
+        "feature_source": "embedding hidden states (per-layer sweep, pool='mean')",
+        "max_context": null,
+        "max_iter": 1000,
+        "n_classes_test": 128,
+        "n_classes_train": 128,
+        "n_test": 128,
+        "n_test_overflow": 77,
+        "n_train": 512,
+        "n_train_overflow": 301,
+        "n_windows_embedded": 1374,
+        "overflow_strategy": "window",
+        "per_layer": [
+          {
+            "accuracy": 0.015625,
+            "f1": 0.004150390625,
+            "layer": 0
+          },
+          {
+            "accuracy": 0.0625,
+            "f1": 0.047309027777777776,
+            "layer": 1
+          },
+          {
+            "accuracy": 0.0546875,
+            "f1": 0.04036458333333333,
+            "layer": 2
+          },
+          {
+            "accuracy": 0.09375,
+            "f1": 0.07473958333333333,
+            "layer": 3
+          },
+          {
+            "accuracy": 0.109375,
+            "f1": 0.08151041666666667,
+            "layer": 4
+          },
+          {
+            "accuracy": 0.1015625,
+            "f1": 0.07786458333333333,
+            "layer": 5
+          },
+          {
+            "accuracy": 0.109375,
+            "f1": 0.08645833333333333,
+            "layer": 6
+          }
+        ],
+        "pool": "mean",
+        "primary_metric_note": "macro-F1 (f1_score average='macro'), DGEB EC metric",
+        "probe": "vendored DGEB logRegClassificationEvaluator (sklearn)",
+        "probe_seed": 42,
+        "scoring_method": "embedding",
+        "standard_scale": false,
+        "swept_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "task_version": "1.0"
+      },
+      "metrics": {
+        "accuracy": 0.109375,
+        "best_layer": 6.0,
+        "f1": 0.08645833333333333,
+        "layer_0_accuracy": 0.015625,
+        "layer_0_f1": 0.004150390625,
+        "layer_1_accuracy": 0.0625,
+        "layer_1_f1": 0.047309027777777776,
+        "layer_2_accuracy": 0.0546875,
+        "layer_2_f1": 0.04036458333333333,
+        "layer_3_accuracy": 0.09375,
+        "layer_3_f1": 0.07473958333333333,
+        "layer_4_accuracy": 0.109375,
+        "layer_4_f1": 0.08151041666666667,
+        "layer_5_accuracy": 0.1015625,
+        "layer_5_f1": 0.07786458333333333,
+        "layer_6_accuracy": 0.109375,
+        "layer_6_f1": 0.08645833333333333,
+        "n_classes": 128.0,
+        "n_test": 128.0,
+        "n_train": 512.0
+      },
+      "primary_metric": "f1",
+      "status": "ok",
+      "task": "dgeb-ec-classification-dna-layer-sweep"
+    },
+    {
+      "metadata": {
+        "blat_dms_id": "BLAT_ECOLX_Firnberg_2014",
+        "max_context": null,
+        "n_missing": 697,
+        "n_over_context": 697,
+        "n_scored": 29961,
+        "n_unscoreable": 0,
+        "per_assay": [
+          {
+            "auc": 0.5007515441802364,
+            "dms_id": "BLAT_ECOLX_Firnberg_2014",
+            "mcc": 0.001873203710899395,
+            "n_missing": 0,
+            "n_variants": 4783,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.015260343855090622
+          },
+          {
+            "auc": 0.5135218067261271,
+            "dms_id": "BLAT_ECOLX_Jacquier_2013",
+            "mcc": 0.02138921542213861,
+            "n_missing": 0,
+            "n_variants": 989,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.010264788239513727
+          },
+          {
+            "auc": 0.5181549659639592,
+            "dms_id": "CCDB_ECOLI_Adkar_2012",
+            "mcc": 0.010231325801848894,
+            "n_missing": 0,
+            "n_variants": 1176,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.0966487590357011
+          },
+          {
+            "auc": 0.5948943857936692,
+            "dms_id": "IF1_ECOLI_Kelsic_2016",
+            "mcc": 0.12801709006532927,
+            "n_missing": 0,
+            "n_variants": 1367,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.13261431072263483
+          },
+          {
+            "auc": 0.5210638894319097,
+            "dms_id": "RNC_ECOLI_Weeks_2023",
+            "mcc": 0.033902215131608585,
+            "n_missing": 0,
+            "n_variants": 4277,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.05587467228921345
+          },
+          {
+            "auc": 0.7251285746709539,
+            "dms_id": "F7YBW8_MESOW_Ding_2023",
+            "mcc": 0.3335016835124163,
+            "n_missing": 0,
+            "n_variants": 7922,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.44418012604160684
+          },
+          {
+            "auc": NaN,
+            "dms_id": "Q837P4_ENTFA_Meier_2023",
+            "mcc": NaN,
+            "n_missing": 697,
+            "n_variants": 0,
+            "rna_type": "mRNA-coding",
+            "spearman": NaN
+          },
+          {
+            "auc": 0.5027537286884045,
+            "dms_id": "MLAC_ECOLI_MacRae_2023",
+            "mcc": 0.003244384919626548,
+            "n_missing": 0,
+            "n_variants": 4007,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.004763700926554588
+          },
+          {
+            "auc": 0.5055329356142827,
+            "dms_id": "ESTA_BACSU_Nutschel_2020",
+            "mcc": 0.0027607410079864216,
+            "n_missing": 0,
+            "n_variants": 2172,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.03522196471774156
+          },
+          {
+            "auc": 0.6016704857366925,
+            "dms_id": "PSAE_PICP2_Tsuboyama_2023_1PSE",
+            "mcc": 0.1349010934139002,
+            "n_missing": 0,
+            "n_variants": 1616,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.16803196660338787
+          },
+          {
+            "auc": 0.6089925484701206,
+            "dms_id": "BCHB_CHLTE_Tsuboyama_2023_2KRU",
+            "mcc": 0.1694915254237288,
+            "n_missing": 0,
+            "n_variants": 1652,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.18181477574969462
+          }
+        ],
+        "reduction": "mean",
+        "scoring_method": "masked_marginal_llr",
+        "task_version": "1.0"
+      },
+      "metrics": {
+        "BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman": 0.18181477574969462,
+        "BLAT_ECOLX_Firnberg_2014_spearman": 0.015260343855090622,
+        "BLAT_ECOLX_Jacquier_2013_spearman": 0.010264788239513727,
+        "CCDB_ECOLI_Adkar_2012_spearman": 0.0966487590357011,
+        "ESTA_BACSU_Nutschel_2020_spearman": 0.03522196471774156,
+        "F7YBW8_MESOW_Ding_2023_spearman": 0.44418012604160684,
+        "IF1_ECOLI_Kelsic_2016_spearman": 0.13261431072263483,
+        "MLAC_ECOLI_MacRae_2023_spearman": 0.004763700926554588,
+        "PSAE_PICP2_Tsuboyama_2023_1PSE_spearman": 0.16803196660338787,
+        "Q837P4_ENTFA_Meier_2023_spearman": NaN,
+        "RNC_ECOLI_Weeks_2023_spearman": 0.05587467228921345,
+        "blat_ecolx_spearman": 0.015260343855090622,
+        "macro_auc": 0.5592464865276355,
+        "macro_mcc": 0.08393124784094831,
+        "macro_spearman": 0.11446754081811392,
+        "n_assays": 11.0,
+        "n_missing_predictions": 697.0
+      },
+      "primary_metric": "macro_spearman",
+      "status": "ok",
+      "task": "rnagym-dms"
+    }
+  ]
+}

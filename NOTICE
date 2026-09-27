@@ -1,0 +1,53 @@
+gLMBench
+Copyright 2026 Soilytix GmbH
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE), except for
+the third-party components listed below, which keep their own licences.
+
+
+VENDORED CODE
+-------------
+
+src/glmbench/tasks/_vendor/rnagym/performance_fitness.py
+    RNAGym, https://github.com/MarksLab-DasLab/RNAGym, commit 114830cabba1a95817d97813c14192e09263ef14
+    MIT License, Copyright (c) 2024 RNAGym team (see src/glmbench/tasks/_vendor/rnagym/LICENSE).
+    Unmodified.
+
+src/glmbench/tasks/_vendor/dgeb/evaluators.py
+    DGEB, https://github.com/TattaBio/DGEB, commit e284167a0ba903d0563b4573ec14354c4af45ad6
+    Apache License 2.0 (see src/glmbench/tasks/_vendor/dgeb/LICENSE).
+    Modified: an extract of two evaluator classes; the torch seeding lines of the
+    `Evaluator` base class are removed. See src/glmbench/tasks/_vendor/dgeb/NOTICE.
+
+src/glmbench/tasks/_vendor/bacbench_essentiality/run_train_cls.py
+    BacBench, https://github.com/macwiatrak/Bacbench, commit 64b7d45823b2ff2ef88458e3aa235caa461a12aa
+    Apache License 2.0, Copyright (c) 2025, Maciek Wiatrak
+    (see src/glmbench/tasks/_vendor/bacbench_essentiality/LICENSE).
+    Unmodified. Kept as a reference for the probe protocol; never imported or executed.
+
+
+TASK DATA
+---------
+
+The benchmark data is not redistributed in this repository; `scripts/fetch_*.py` download
+it from its upstream sources at pinned revisions. The one exception is RNAGym's
+`reference_sheet_final.csv` (MIT, RNAGym team), committed under
+src/glmbench/tasks/data/rnagym/. Each data directory has a NOTICE with its source, licence
+and citation:
+
+    Gene essentiality   BacBench (Wiatrak et al.), Hugging Face dataset
+                        macwiatrak/bacbench-essential-genes-dna (Apache-2.0); labels from the
+                        Database of Essential Genes (DEG).
+    EC classification   DGEB (West-Roberts et al.), Hugging Face dataset
+                        tattabio/ec_classification_dna (Apache-2.0); sequences from UniProt
+                        (CC BY 4.0).
+    RNAGym DMS          RNAGym (Notin et al.), github.com/MarksLab-DasLab/RNAGym and Hugging
+                        Face Marks-lab/RNAgym (MIT).
+
+
+MODELS
+------
+
+No model weights are distributed with this repository. The model specs under specs/ point
+at weights published by their authors, under their own licences: LOAM (Soilytix/LOAM-*),
+Evo 2, Evo 1.5, gLM2, GenomeOcean, ProkBERT and Nucleotide Transformer v3.

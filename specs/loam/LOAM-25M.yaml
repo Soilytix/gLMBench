@@ -1,0 +1,27 @@
+# LOAM-25M, as released on the Hugging Face Hub (Soilytix/LOAM-25M).
+#
+# `checkpoint` is a Hub repo id or a local directory. With GLMBENCH_LOAM_HF_ROOT unset it is
+# the Hub id Soilytix/LOAM-25M, downloaded once with huggingface_hub (the repo is gated:
+# accept its terms on the Hub and log in first). Set GLMBENCH_LOAM_HF_ROOT to a directory
+# that holds a LOAM-25M/ download to score a local copy instead. The model hash covers the
+# weight bytes, not where they came from, so both routes give the same hash.
+#
+# The LOAM serving conventions (BOS prefix, 8,191-nt context, raw block outputs as
+# embeddings) are fixed by the adapter, not set here. The knobs below are the ones the
+# LOAM manuscript's rows were scored with; changing dtype or pool_dtype changes the hash.
+adapter: loam-hf
+adapter_version: "1.0.0"
+display_name: "LOAM-25M"
+model:
+  checkpoint: "${GLMBENCH_LOAM_HF_ROOT:-Soilytix}/LOAM-25M"
+  revision: null            # a Hub commit sha pins the download; null = the default branch
+  dtype: auto               # bf16 on GPU, fp32 on CPU
+  pool_dtype: compute       # mean-pool in the compute dtype, as the manuscript's rows did
+  batch_size: 8
+  token_budget: 16384       # batch × padded length, in tokens
+weights_digest:
+  strategy: file_sha256     # sha256 of model.safetensors (checked against loam_export.json)
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"   # an env with glmbench + torch + transformers
+  gpus: "0"                 # choose the physical GPU with CUDA_VISIBLE_DEVICES

@@ -1,0 +1,373 @@
+{
+  "baseline": "kmer-composition",
+  "baseline_version": "1.0.0",
+  "benchmark": "loam_paper",
+  "generated_at": "2026-09-24T21:23:55+00:00",
+  "ks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "max_context": 8192,
+  "schema_version": 1,
+  "sweep_identity_check": {
+    "identical": true,
+    "k": 1,
+    "n_layers_probed": 4,
+    "note": "A sweep is a max over layers and the k-mer vector is depth-free, so the two are equal by construction. This measures it.",
+    "single_layer_task": "dgeb-ec-classification-dna",
+    "single_layer_value": 0.0002232142857142857,
+    "sweep_task": "dgeb-ec-classification-dna-layer-sweep",
+    "sweep_value": 0.0002232142857142857
+  },
+  "tasks": {
+    "bacbench-essentiality": {
+      "applicability_reason": "embedding-only task \u2014 a composition vector is a valid input",
+      "applicable": true,
+      "floor": {
+        "embedding_dim": 1024,
+        "k": 5,
+        "ks_evaluated": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "metric": "macro_mean_auroc",
+        "value": 0.6531225602443232
+      },
+      "required_capabilities": [
+        "embedding"
+      ],
+      "runs": [
+        {
+          "embedding_dim": 4,
+          "k": 1,
+          "metrics": {
+            "accuracy": 0.8708523096942095,
+            "f1": 0.0,
+            "fn": 3573.0,
+            "fp": 0.0,
+            "macro_mean_auprc": 0.21728988550309186,
+            "macro_mean_auroc": 0.43217029648089156,
+            "macro_median_auprc": 0.09646204481594378,
+            "macro_median_auroc": 0.43423143458759617,
+            "n_test_genes": 27666.0,
+            "n_test_genomes_scored": 9.0,
+            "precision": null,
+            "recall": 0.0,
+            "specificity": 1.0,
+            "tn": 24093.0,
+            "tp": 0.0
+          },
+          "primary_metric": "macro_mean_auroc",
+          "reason": null,
+          "status": "ok",
+          "value": 0.43217029648089156
+        },
+        {
+          "embedding_dim": 16,
+          "k": 2,
+          "metrics": {
+            "accuracy": 0.8708161642449216,
+            "f1": 0.0011179429849077697,
+            "fn": 3571.0,
+            "fp": 3.0,
+            "macro_mean_auprc": 0.30298352926200445,
+            "macro_mean_auroc": 0.5885057492272159,
+            "macro_median_auprc": 0.20582944749752485,
+            "macro_median_auroc": 0.6072534585238596,
+            "n_test_genes": 27666.0,
+            "n_test_genomes_scored": 9.0,
+            "precision": 0.4,
+            "recall": 0.000559753708368318,
+            "specificity": 0.999875482505292,
+            "tn": 24090.0,
+            "tp": 2.0
+          },
+          "primary_metric": "macro_mean_auroc",
+          "reason": null,
+          "status": "ok",
+          "value": 0.5885057492272159
+        },
+        {
+          "embedding_dim": 64,
+          "k": 3,
+          "metrics": {
+            "accuracy": 0.8710330369406492,
+            "f1": 0.014908890115958034,
+            "fn": 3546.0,
+            "fp": 22.0,
+            "macro_mean_auprc": 0.3591921868399821,
+            "macro_mean_auroc": 0.6383671212988712,
+            "macro_median_auprc": 0.26866054831817954,
+            "macro_median_auroc": 0.6427420308711337,
+            "n_test_genes": 27666.0,
+            "n_test_genomes_scored": 9.0,
+            "precision": 0.5510204081632653,
+            "recall": 0.007556675062972292,
+            "specificity": 0.9990868717054746,
+            "tn": 24071.0,
+            "tp": 27.0
+          },
+          "primary_metric": "macro_mean_auroc",
+          "reason": null,
+          "status": "ok",
+          "value": 0.6383671212988712
+        },
+        {
+          "embedding_dim": 256,
+          "k": 4,
+          "metrics": {
+            "accuracy": 0.8707800187956336,
+            "f1": 0.024024024024024024,
+            "fn": 3529.0,
+            "fp": 46.0,
+            "macro_mean_auprc": 0.3566259269376671,
+            "macro_mean_auroc": 0.6367865673500215,
+            "macro_median_auprc": 0.2659522268602011,
+            "macro_median_auroc": 0.6238763380448282,
+            "n_test_genes": 27666.0,
+            "n_test_genomes_scored": 9.0,
+            "precision": 0.4888888888888889,
+            "recall": 0.012314581584102995,
+            "specificity": 0.9980907317478106,
+            "tn": 24047.0,
+            "tp": 44.0
+          },
+          "primary_metric": "macro_mean_auroc",
+          "reason": null,
+          "status": "ok",
+          "value": 0.6367865673500215
+        },
+        {
+          "embedding_dim": 1024,
+          "k": 5,
+          "metrics": {
+            "accuracy": 0.8707438733463457,
+            "f1": 0.03611859838274933,
+            "fn": 3506.0,
+            "fp": 70.0,
+            "macro_mean_auprc": 0.36743797479297124,
+            "macro_mean_auroc": 0.6531225602443232,
+            "macro_median_auprc": 0.2678034897379743,
+            "macro_median_auroc": 0.6339671181027855,
+            "n_test_genes": 27666.0,
+            "n_test_genomes_scored": 9.0,
+            "precision": 0.48905109489051096,
+            "recall": 0.018751749230338653,
+            "specificity": 0.9970945917901465,
+            "tn": 24023.0,
+            "tp": 67.0
+          },
+          "primary_metric": "macro_mean_auroc",
+          "reason": null,
+          "status": "ok",
+          "value": 0.6531225602443232
+        },
+        {
+          "embedding_dim": 4096,
+          "k": 6,
+          "metrics": {
+            "accuracy": 0.867816091954023,
+            "f1": 0.08414725770097671,
+            "fn": 3405.0,
+            "fp": 252.0,
+            "macro_mean_auprc": 0.3446573184452391,
+            "macro_mean_auroc": 0.6375700662988888,
+            "macro_median_auprc": 0.2425757396085407,
+            "macro_median_auroc": 0.6185389437577622,
+            "n_test_genes": 27666.0,
+            "n_test_genomes_scored": 9.0,
+            "precision": 0.4,
+            "recall": 0.047019311502938706,
+            "specificity": 0.9895405304445275,
+            "tn": 23841.0,
+            "tp": 168.0
+          },
+          "primary_metric": "macro_mean_auroc",
+          "reason": null,
+          "status": "ok",
+          "value": 0.6375700662988888
+        }
+      ],
+      "task_version": "1.0"
+    },
+    "bacbench-essentiality-layer-sweep": {
+      "applicability_reason": "embedding-only task \u2014 a composition vector is a valid input",
+      "applicable": true,
+      "floor": {
+        "embedding_dim": 1024,
+        "k": 5,
+        "ks_evaluated": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "metric": "macro_mean_auroc",
+        "value": 0.6531225602443232
+      },
+      "inheritance_reason": "a layer sweep is a max over layers, and the k-mer vector is the same at every layer, so this task's floor is exactly its single-layer twin's",
+      "inherits_from": "bacbench-essentiality",
+      "required_capabilities": [
+        "embedding"
+      ],
+      "task_version": "1.0"
+    },
+    "dgeb-ec-classification-dna": {
+      "applicability_reason": "embedding-only task \u2014 a composition vector is a valid input",
+      "applicable": true,
+      "floor": {
+        "embedding_dim": 256,
+        "k": 4,
+        "ks_evaluated": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "metric": "f1",
+        "value": 0.019112494885433713
+      },
+      "required_capabilities": [
+        "embedding"
+      ],
+      "runs": [
+        {
+          "embedding_dim": 4,
+          "k": 1,
+          "metrics": {
+            "accuracy": 0.0078125,
+            "f1": 0.0002232142857142857,
+            "n_classes": 128.0,
+            "n_test": 128.0,
+            "n_train": 512.0
+          },
+          "primary_metric": "f1",
+          "reason": null,
+          "status": "ok",
+          "value": 0.0002232142857142857
+        },
+        {
+          "embedding_dim": 16,
+          "k": 2,
+          "metrics": {
+            "accuracy": 0.0078125,
+            "f1": 0.00025201612903225806,
+            "n_classes": 128.0,
+            "n_test": 128.0,
+            "n_train": 512.0
+          },
+          "primary_metric": "f1",
+          "reason": null,
+          "status": "ok",
+          "value": 0.00025201612903225806
+        },
+        {
+          "embedding_dim": 64,
+          "k": 3,
+          "metrics": {
+            "accuracy": 0.03125,
+            "f1": 0.018508184523809524,
+            "n_classes": 128.0,
+            "n_test": 128.0,
+            "n_train": 512.0
+          },
+          "primary_metric": "f1",
+          "reason": null,
+          "status": "ok",
+          "value": 0.018508184523809524
+        },
+        {
+          "embedding_dim": 256,
+          "k": 4,
+          "metrics": {
+            "accuracy": 0.0390625,
+            "f1": 0.019112494885433713,
+            "n_classes": 128.0,
+            "n_test": 128.0,
+            "n_train": 512.0
+          },
+          "primary_metric": "f1",
+          "reason": null,
+          "status": "ok",
+          "value": 0.019112494885433713
+        },
+        {
+          "embedding_dim": 1024,
+          "k": 5,
+          "metrics": {
+            "accuracy": 0.0390625,
+            "f1": 0.01855215097402597,
+            "n_classes": 128.0,
+            "n_test": 128.0,
+            "n_train": 512.0
+          },
+          "primary_metric": "f1",
+          "reason": null,
+          "status": "ok",
+          "value": 0.01855215097402597
+        },
+        {
+          "embedding_dim": 4096,
+          "k": 6,
+          "metrics": {
+            "accuracy": 0.0390625,
+            "f1": 0.018629807692307692,
+            "n_classes": 128.0,
+            "n_test": 128.0,
+            "n_train": 512.0
+          },
+          "primary_metric": "f1",
+          "reason": null,
+          "status": "ok",
+          "value": 0.018629807692307692
+        }
+      ],
+      "task_version": "1.0"
+    },
+    "dgeb-ec-classification-dna-layer-sweep": {
+      "applicability_reason": "embedding-only task \u2014 a composition vector is a valid input",
+      "applicable": true,
+      "floor": {
+        "embedding_dim": 256,
+        "k": 4,
+        "ks_evaluated": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "metric": "f1",
+        "value": 0.019112494885433713
+      },
+      "inheritance_reason": "a layer sweep is a max over layers, and the k-mer vector is the same at every layer, so this task's floor is exactly its single-layer twin's",
+      "inherits_from": "dgeb-ec-classification-dna",
+      "required_capabilities": [
+        "embedding"
+      ],
+      "task_version": "1.0"
+    },
+    "rnagym-dms": {
+      "applicability_reason": "this task reads the LM head (it needs `masked_marginal_llr` or `sequence_loglikelihood`), and a k-mer frequency vector is not a likelihood model \u2014 there is no model-free score to report. A k-th-order Markov background model would give one; that is a different baseline and is not implemented.",
+      "applicable": false,
+      "required_capabilities": [
+        "sequence_loglikelihood"
+      ],
+      "task_version": "1.0"
+    }
+  },
+  "what_this_is": "The score each task gives to a model-free k-mer frequency vector, produced by the unmodified task code. `floor` is the best k \u2014 the strongest a counter can do. A leaderboard cell at or below its task's floor is not evidence about a language model."
+}

@@ -1,0 +1,18 @@
+# Example spec: a fully capable, model-free Echo "model" (the test double). It needs no
+# weights and no GPU, so it exercises the whole run -> record -> leaderboard path on CPU.
+adapter: echo
+adapter_version: "0.1.0"
+model:
+  # echo-specific knobs (see EchoAdapter.from_spec):
+  weights_value: "echo-full-v0"          # makes this hash distinctly from echo-score-only
+  config:
+    family: echo
+    embedding_dim: 8
+    n_layers: 2
+  # no `capabilities` key -> all capabilities (default)
+weights_digest:
+  strategy: declared
+  value: "echo-full-v0"
+runner:
+  backend: local
+  python_exe: null                        # null -> the core's own python (echo is model-free)

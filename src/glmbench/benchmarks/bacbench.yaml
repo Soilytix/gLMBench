@@ -1,0 +1,5 @@
+name: bacbench
+version: "1.0"
+description: "BacBench gene-scale tasks for genomic LMs (DNA). v1: gene essentiality (EMBEDDING probe)."
+tasks:
+  - bacbench-essentiality          # registry keys; ordered

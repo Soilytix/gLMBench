@@ -1,0 +1,6 @@
+name: dgeb_ec
+version: "1.0"
+description: "DGEB EC classification (DNA): 128-way EC-class embedding probe (macro-F1). NA/DNA variant only."
+tasks:
+  - dgeb-ec-classification-dna              # single-layer (layer='last' default); full real-fleet coverage
+  - dgeb-ec-classification-dna-layer-sweep  # best-layer sweep (adapters that serve every layer)

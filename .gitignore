@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+.venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Your benchmark output. The paper's reference records live in paper/, never here.
+results/
+
+# Downloaded task data (each data directory also has its own .gitignore)
+src/glmbench/tasks/data/**/*.csv
+!src/glmbench/tasks/data/rnagym/reference_sheet_final.csv
+src/glmbench/tasks/data/rnagym/processed_DMS_files/

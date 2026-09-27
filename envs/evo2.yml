@@ -1,0 +1,22 @@
+# The Evo 2 environment. Evo 2 runs through Arc Institute's `evo2` package, whose dependencies
+# (vtx, flash-attn) are kept apart from the main environment. gLMBench is installed here
+# without its dependencies: this environment only runs the Evo 2 runner, which the main
+# environment calls as a subprocess (set GLMBENCH_EVO2_PYTHON to this env's python).
+#
+#   conda env create -f envs/evo2.yml
+#   conda activate evo2
+#   pip install torch==2.12.0 --extra-index-url https://download.pytorch.org/whl/cu126
+#   pip install ninja packaging wheel
+#   pip install --no-build-isolation flash-attn==2.8.3
+#   pip install evo2==0.6.0 vtx==1.1.0 "numpy==2.4.6" "pydantic==2.13.4" "PyYAML==6.0.3"
+#   pip install --no-deps -e .
+#   export GLMBENCH_EVO2_PYTHON="$(which python)"
+#
+# Evo2-7B needs one GPU with enough memory for a 7B model in bf16 (we recommend 48 GB).
+# Pin it with CUDA_VISIBLE_DEVICES: the package spreads the model over every visible GPU.
+name: evo2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip

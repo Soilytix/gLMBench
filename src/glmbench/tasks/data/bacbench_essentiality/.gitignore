@@ -1,0 +1,3 @@
+# Heavy per-split gene CSVs (~200 MB) are fetched on demand, never committed.
+# Populate with: python scripts/fetch_bacbench_essentiality.py
+essential_genes_*.csv

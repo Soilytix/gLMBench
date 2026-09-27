@@ -1,0 +1,30 @@
+# GenomeOcean-100M (JGI): BPE-tokenized genomic causal LM, a stock MistralForCausalLM.
+# Served in-process with torch + transformers, without trust_remote_code: the repo's bundled
+# modeling_mistral.py targets transformers 4.38.2 and fails on transformers >= 5, and the
+# weights are plain Mistral, so the in-tree implementation is the model.
+adapter: genomeocean
+adapter_version: "0.2.0"
+display_name: "GenomeOcean-100M"
+model:
+  checkpoint: "pGenomeOcean/GenomeOcean-100M"   # Hub repo id (or a local download dir)
+  n_layers: 12                                   # config.json `num_hidden_layers`; not hashed
+  tokenizer: null                                # null -> same as checkpoint
+  revision: "7e558533874dd3ee11ef229d68a2844a88a0c3e2"   # pinned commit (load + hash key)
+  dtype: bfloat16                                # the runner uses fp32 on CPU
+  attn_implementation: sdpa                      # sdpa | eager | flash_attention_2
+  trust_remote_code: false                       # stock load (see above)
+  # max_context is in nucleotides (tasks window by it). The model's window is 1024 tokens at
+  # ~5 nt/token; the runner caps tokenization at max_tokens as the backstop.
+  max_context: 5000
+  max_tokens: 1024                               # the model's trained token window
+  pool_include_special: true                     # match the vendor's mean pool (incl. [CLS]/[SEP])
+  batch_size: 16
+weights_digest:
+  strategy: hf_revision        # pin the commit; no weight read
+  value: "7e558533874dd3ee11ef229d68a2844a88a0c3e2"
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"   # an env with glmbench + torch + transformers
+  gpus: "0"                                   # "0"/"auto" -> cuda; "cpu"/"" -> cpu
+  scratch_dir: null
+  extra: {}

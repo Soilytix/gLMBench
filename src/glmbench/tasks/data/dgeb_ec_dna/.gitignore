@@ -1,0 +1,3 @@
+# Heavy per-split sequence CSVs are fetched on demand, never committed.
+# Populate with: python scripts/fetch_dgeb_ec_dna.py
+ec_classification_dna_*.csv

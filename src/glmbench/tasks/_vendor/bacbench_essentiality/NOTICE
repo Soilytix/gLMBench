@@ -1,0 +1,33 @@
+BacBench `run_train_cls.py`: vendored verbatim as a provenance reference
+========================================================================
+
+Source  : macwiatrak/Bacbench
+URL     : https://github.com/macwiatrak/Bacbench/blob/64b7d45823b2ff2ef88458e3aa235caa461a12aa/bacbench/tasks/essential_genes/run_train_cls.py
+Commit  : 64b7d45823b2ff2ef88458e3aa235caa461a12aa
+License : Apache-2.0 (see LICENSE in this directory; Copyright (c) 2025, Maciek Wiatrak)
+Cite    : Wiatrak et al., "BacBench: Evaluating Genomic Language Models for Bacteria".
+
+This file is a byte-identical, unmodified copy of BacBench's gene-essentiality probe
+script. It documents the task's scoring protocol: per-genome AUROC / AUPRC
+(`calculate_metrics_per_genome`) of a linear probe trained on frozen gene embeddings.
+
+It is a reference only and is never imported or executed by gLMBench: it depends on
+`torch` / `pytorch_lightning` / `torchmetrics`, and its metric is entangled with a
+PyTorch-Lightning training loop. gLMBench re-implements the protocol, torch-free, in
+`glmbench.tasks.bacbench_essentiality_metrics`, with two deviations from this reference:
+
+  1. Probe: this reference trains a torch `LayerNorm -> Dropout -> Linear` net (AdamW, BCE,
+     up to 100 epochs, early stopping on validation AUROC). gLMBench fits a CPU scikit-learn
+     LogisticRegression on standardized embeddings. Scores therefore reproduce the
+     published protocol, not its exact numbers.
+  2. Metric: this reference uses `torchmetrics.functional.auroc/average_precision`.
+     gLMBench uses `sklearn.metrics.roc_auc_score/average_precision_score`, which are
+     numerically equivalent for binary labels. An optional test (`tests/unit/test_phase9.py`,
+     skipped unless `torchmetrics` is installed) checks they agree to 1e-6 on the fixture.
+
+Aggregation across genomes: the reference reports both the mean and the median across test
+genomes, and the BacBench paper's tables use the mean. gLMBench records both and sets
+`primary_metric` to the macro-mean AUROC.
+
+Rules. Copy, never edit. The sha256 in `SHA256SUMS` is checked by a unit test, so an edit
+to the copy fails loudly.

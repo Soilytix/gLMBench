@@ -1,0 +1,32 @@
+# gLM2-650M (TattaBio): mixed-modality masked-LM genomic encoder, custom gLM2ForMaskedLM.
+# Served in-process with torch + transformers + einops (einops is in the [hf] extra).
+#
+# Loaded with trust_remote_code (custom architecture, no in-tree implementation); `revision`
+# pins the commit. A bidirectional encoder has no causal likelihood, so rnagym-dms scores
+# gLM2 by masked-marginal LLR. Capabilities: {tokenize, embedding, masked_marginal_llr}.
+adapter: glm2
+adapter_version: "0.1.0"
+display_name: "gLM2-650M"
+model:
+  checkpoint: "tattabio/gLM2_650M"     # Hub repo id (or a local download dir)
+  n_layers: 33                          # config.json `depth`; describes the weights, not hashed
+  tokenizer: null                       # null -> same as checkpoint
+  revision: "08754cba59a1f97d517f873fad6c672d2b1abdc7"   # pinned commit (load + hash key)
+  dtype: bfloat16                       # the runner uses fp32 on CPU
+  trust_remote_code: true               # custom gLM2 architecture
+  strand_prefix: "+"                    # "+" | "-" | "none": leading strand marker
+  pool_include_special: false           # exclude the strand marker from pooling
+  # max_context is in nucleotides (tasks window by it): gLM2's window is 4096 tokens at
+  # 1 nt/token, minus the 1-token strand marker.
+  max_context: 4095
+  max_tokens: 4096                      # gLM2's trained token window
+  batch_size: 8
+weights_digest:
+  strategy: hf_revision
+  value: "08754cba59a1f97d517f873fad6c672d2b1abdc7"
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"   # an env with glmbench + torch + transformers + einops
+  gpus: "0"                             # "0"/"auto" -> cuda; "cpu"/"" -> cpu
+  scratch_dir: null
+  extra: {}

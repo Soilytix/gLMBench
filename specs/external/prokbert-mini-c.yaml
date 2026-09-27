@@ -1,0 +1,29 @@
+# ProkBERT-mini-c: the character-level ProkBERT (LCA k=1, shift=1: 1 nt/token), so token
+# spans are unit-width and the masked-marginal LLR reduces to the per-position convention.
+# Same encoder, serving path and adapter as specs/external/prokbert-mini.yaml.
+adapter: prokbert
+adapter_version: "0.2.0"
+display_name: "ProkBERT-mini-c"
+model:
+  checkpoint: "neuralbioinfo/prokbert-mini-c"
+  n_layers: 6                                  # config.json `num_hidden_layers`; not hashed
+  tokenizer: null
+  revision: "417ebe73d355bc68b01d4fbe9dc2b0cb274b86e0"        # weights commit
+  # mini-c's auto_map points at its own repo (the modeling code lives there), so the code
+  # revision is the weights commit.
+  code_revision: "417ebe73d355bc68b01d4fbe9dc2b0cb274b86e0"
+  dtype: bfloat16
+  trust_remote_code: true
+  pool_include_special: false
+  max_context: 1020                            # nucleotides; k=1 -> L+2 tokens <= 1024
+  max_tokens: 1024
+  batch_size: 16
+weights_digest:
+  strategy: hf_revision
+  value: "417ebe73d355bc68b01d4fbe9dc2b0cb274b86e0"
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"
+  gpus: "0"
+  scratch_dir: null
+  extra: {}

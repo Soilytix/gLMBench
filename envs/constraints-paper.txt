@@ -1,0 +1,33 @@
+# The exact package versions the LOAM paper's gLMBench numbers were produced with
+# (Python 3.11.15, Linux x86_64, CUDA 12.6 build of torch).
+#
+# Use as a pip constraints file, from the repository root:
+#     pip install -e ".[hf,data,dev]" -c envs/constraints-paper.txt \
+#         --extra-index-url https://download.pytorch.org/whl/cu126
+#
+# The probe fits (scikit-learn LogisticRegression on CPU) do not always converge within their
+# iteration cap on the essentiality task, so their last digits depend on the numpy / scipy /
+# scikit-learn builds and their BLAS (the paper used the OpenBLAS 0.3.31 that ships inside the
+# numpy and scipy wheels). Pin these to reproduce the paper's numbers bitwise.
+
+# core
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.0
+pandas==3.0.3
+pydantic==2.13.4
+PyYAML==6.0.3
+threadpoolctl==3.6.0
+
+# Hugging Face runners (the `hf` extra)
+torch==2.12.0
+transformers==5.12.1
+tokenizers==0.22.2
+safetensors==0.8.0
+accelerate==1.14.0
+huggingface_hub==1.32.0
+einops==0.8.2
+
+# data fetch (the `data` extra)
+datasets==5.0.0
+pyarrow==24.0.0

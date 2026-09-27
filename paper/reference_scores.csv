@@ -1,0 +1,1648 @@
+model_id,model_hash,task,metric,layer,is_primary,value
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,accuracy,,0,0.8784067085953878
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,f1,,0,0.20095011876484561
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,fn,,0,3150.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,fp,,0,214.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,macro_mean_auprc,,0,0.5048150602144358
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,macro_mean_auroc,,1,0.726576117764028
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,macro_median_auprc,,0,0.482513719611095
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,macro_median_auroc,,0,0.7241040274410077
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,n_test_genes,,0,27666.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,precision,,0,0.6640502354788069
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,recall,,0,0.11838790931989925
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,specificity,,0,0.9911177520441622
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,tn,,0,23879.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality,tp,,0,423.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,accuracy,,0,0.8784067085953878
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,best_layer,,0,5.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,f1,,0,0.20095011876484561
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,fn,,0,3150.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,fp,,0,214.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.5048150602144358
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.2421869026017166
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.38487236083887033
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.42881310112401777
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.44532006423179127
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.49135271370036576
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.5048150602144358
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.726576117764028
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.4832405463325737
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6629944072103594
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.698078291015944
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.7080600783255269
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7199814201206601
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.726576117764028
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.482513719611095
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7241040274410077
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,precision,,0,0.6640502354788069
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,recall,,0,0.11838790931989925
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,specificity,,0,0.9911177520441622
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,tn,,0,23879.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,bacbench-essentiality-layer-sweep,tp,,0,423.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna,accuracy,,0,0.2265625
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna,f1,,1,0.18151041666666667
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna,n_classes,,0,128.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna,n_test,,0,128.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna,n_train,,0,512.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.234375
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.046875
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.078125
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.140625
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.234375
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.2265625
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,4.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.19322916666666667
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.00021701388888888888
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.031684027777777776
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.04954117063492063
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.1015625
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.19322916666666667
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.18151041666666667
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.07761812517537127
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.000483975961711347
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.014949589567919114
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.016313792974609467
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.09069255234286096
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.37900579777297416
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.3756509342110075
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.029021589873290725
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.02192569395816086
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.45372524261162167
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.002044686697377256
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,blat_ecolx_spearman,,0,0.000483975961711347
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,macro_auc,,0,0.567594093064087
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,macro_mcc,,0,0.09908580983031956
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,macro_spearman,,1,0.13285745283153674
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,n_assays,,0,11.0
+LOAM-25M,glmb:ef7a2f14704c7258a9162958,rnagym-dms,n_missing_predictions,,0,0.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,accuracy,,0,0.8812983445384226
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,f1,,0,0.26002703920684994
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,fn,,0,2996.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,fp,,0,288.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,macro_mean_auprc,,0,0.5523715151355107
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,macro_mean_auroc,,1,0.757353612305449
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,macro_median_auprc,,0,0.5395809970292912
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,macro_median_auroc,,0,0.7380536992134366
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,n_test_genes,,0,27666.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,precision,,0,0.6670520231213873
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,recall,,0,0.16148894486425971
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,specificity,,0,0.9880463205080314
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,tn,,0,23805.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality,tp,,0,577.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,accuracy,,0,0.8812983445384226
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,best_layer,,0,8.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,f1,,0,0.26002703920684994
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,fn,,0,2996.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,fp,,0,288.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.5523715151355107
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.24314533763376625
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.37498571311463774
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.401049644388359
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.4296496545613501
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.44820452877120776
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.4727542300879295
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.5358571104667204
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.5508037245278544
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.5523715151355107
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.757353612305449
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.47985186294824544
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6609000671739315
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6599057474602013
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6905902632137395
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7111081511264118
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.7174483302956445
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7447575228271073
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.7556064207220469
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.757353612305449
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.5395809970292912
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7380536992134366
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,precision,,0,0.6670520231213873
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,recall,,0,0.16148894486425971
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,specificity,,0,0.9880463205080314
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,tn,,0,23805.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,bacbench-essentiality-layer-sweep,tp,,0,577.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna,accuracy,,0,0.3359375
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna,f1,,1,0.30078125
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna,n_classes,,0,128.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna,n_test,,0,128.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna,n_train,,0,512.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.3359375
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.0390625
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.09375
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.125
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.1328125
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.171875
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.2890625
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.3125
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.3359375
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,8.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.30078125
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.00022644927536231884
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.02126736111111111
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.05848214285714286
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.08348214285714285
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.10130208333333332
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.13411458333333331
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.24010416666666665
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.26432291666666663
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.30078125
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.14536561177214463
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.16637004155734916
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.12192092342300657
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.0362071301993682
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.11865642070595304
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.5075364679283068
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.27975724001745794
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.020846582652530327
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.03749877528406825
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.39344136427850585
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.4022998964123371
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,blat_ecolx_spearman,,0,0.16637004155734916
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,macro_auc,,0,0.5961903817979501
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,macro_mcc,,0,0.13405656376187045
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,macro_spearman,,1,0.2027182231119116
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,n_assays,,0,11.0
+LOAM-100M,glmb:57ca8719fc72b4e44e70ccc3,rnagym-dms,n_missing_predictions,,0,0.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,accuracy,,0,0.8833947805971228
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,f1,,0,0.3056392595781317
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,fn,,0,2863.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,fp,,0,363.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,macro_mean_auprc,,0,0.5586648431559299
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,macro_mean_auroc,,1,0.762298195566098
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,macro_median_auprc,,0,0.5654158614831807
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,macro_median_auroc,,0,0.7388299130640488
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,n_test_genes,,0,27666.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,precision,,0,0.6616961789375583
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,recall,,0,0.19871256647075286
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,specificity,,0,0.9849333831403312
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,tn,,0,23730.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality,tp,,0,710.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,accuracy,,0,0.8820573989734692
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,best_layer,,0,10.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,f1,,0,0.2950961330740981
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,fn,,0,2890.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,fp,,0,373.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.561563481485468
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.2412165713615402
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.36652052253601136
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.38776998558276865
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.40953116100856973
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.42732988317274284
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.4456721473942834
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.4805256402611558
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.5174921366372871
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.532722977294314
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.5432231345548098
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.561563481485468
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.5581780281118293
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.5586648431559299
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.7721536165631774
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.47882532140819506
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6460538702830579
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6618038745592236
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6802110096411645
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7018595369522475
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.7139420949045472
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7287424747793152
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.7484365137592608
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.7557505048499347
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.7650461549204977
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.7721536165631774
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.7641665517753887
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.762298195566098
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.5690908842718334
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.741446862617541
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,precision,,0,0.646780303030303
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,recall,,0,0.19115589140778058
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,specificity,,0,0.9845183248246379
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,tn,,0,23720.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,bacbench-essentiality-layer-sweep,tp,,0,683.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna,accuracy,,0,0.3359375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna,f1,,1,0.27760416666666665
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna,n_classes,,0,128.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna,n_test,,0,128.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna,n_train,,0,512.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.390625
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.0390625
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.046875
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.09375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.109375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.1484375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.203125
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.234375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.265625
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.3359375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.390625
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.3828125
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.3359375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,10.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.32343749999999993
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.0002840909090909091
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.0234375
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.02903645833333333
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.06315104166666666
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.08139880952380951
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.10703124999999998
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.16666666666666666
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.18203124999999998
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.20546874999999998
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.2700520833333333
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.32343749999999993
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.32135416666666666
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.27760416666666665
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.10236374616150103
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.41490914614790775
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.37559971720400864
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.025060533038075664
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.14171803691137555
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.4321922669750916
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.30908241637283107
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.12084311363654769
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.11074431059368484
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.4860949188454891
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.4622727973162272
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,blat_ecolx_spearman,,0,0.41490914614790775
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,macro_auc,,0,0.6346728887821723
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,macro_mcc,,0,0.20096219806333696
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,macro_spearman,,1,0.27098918210934003
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,n_assays,,0,11.0
+LOAM-340M,glmb:7e22ae6e6afb5a856ff23dc2,rnagym-dms,n_missing_predictions,,0,0.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,accuracy,,0,0.8819489626256054
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,f1,,0,0.31299957930164074
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,fn,,0,2829.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,fp,,0,437.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,macro_mean_auprc,,0,0.5687556925435198
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,macro_mean_auroc,,1,0.7703436131014817
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,macro_median_auprc,,0,0.5791409177228127
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,macro_median_auroc,,0,0.7538219291501568
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,n_test_genes,,0,27666.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,precision,,0,0.6299745977984759
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,recall,,0,0.20822837951301426
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,specificity,,0,0.9818619516042004
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,tn,,0,23656.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality,tp,,0,744.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,accuracy,,0,0.8833586351478349
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,best_layer,,0,15.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,f1,,0,0.3213459516298633
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,fn,,0,2809.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,fp,,0,418.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.5718938596046492
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.23909177362051284
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.3689407349492172
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.38555361652808895
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.40825166035593735
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.4204809151856658
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.43321581172926243
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.45254490736589115
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.48407687723841153
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.5191684026751441
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.5216996937163473
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.525826254754009
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.5401195615535578
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.5620148660582097
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,13,0,0.570103440952329
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,14,0,0.5766582049953243
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,15,0,0.5718938596046492
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auprc,16,0,0.5687556925435198
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.7707963372125984
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.48200771818707355
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6591444506606261
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6662565519053328
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6778672597377207
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.6822051524858463
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.6981513493211422
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7065999889671465
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.7283868941479851
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.7462815675411689
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.7535512818634832
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.7508994310652634
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.755914350388071
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.7649414864627827
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,13,0,0.7678058650261677
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,14,0,0.7674247678493908
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,15,0,0.7707963372125984
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_mean_auroc,16,0,0.7703436131014817
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.5810509484912523
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7573999053758353
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,precision,,0,0.6463620981387479
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,recall,,0,0.21382591659669745
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,specificity,,0,0.9826505624040177
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,tn,,0,23675.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,bacbench-essentiality-layer-sweep,tp,,0,764.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna,accuracy,,0,0.3515625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna,f1,,1,0.29739583333333336
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna,n_classes,,0,128.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna,n_test,,0,128.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna,n_train,,0,512.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.4453125
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.0390625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.0390625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0703125
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.0703125
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.1171875
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.125
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.140625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.21875
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.265625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.2890625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.28125
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.4140625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,13,0,0.4140625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,14,0,0.4453125
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,15,0,0.3984375
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,accuracy,16,0,0.3515625
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,14.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.3938988095238095
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.0002403846153846154
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.0234375
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.025260416666666667
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.04308712121212121
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.05
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.08515624999999999
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.10390624999999999
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.10755208333333331
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.18020833333333333
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.22057291666666667
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.23359375
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.22890624999999998
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.36197916666666663
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,13,0,0.36030505952380953
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,14,0,0.3938988095238095
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,15,0,0.34088541666666666
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,f1,16,0,0.29739583333333336
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.10134826049894465
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.4329808889884517
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.41618574545791526
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.09041508007998751
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.21989623016849605
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.517391854200804
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.35321419165824486
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.24870389955213215
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.1252019888685077
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.5001137376583124
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.48799876663929287
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,blat_ecolx_spearman,,0,0.4329808889884517
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,macro_auc,,0,0.6596285650187103
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,macro_mcc,,0,0.23691289706016364
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,macro_spearman,,1,0.3175864221610081
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,n_assays,,0,11.0
+LOAM-624M,glmb:24879d8765197f4a0db44583,rnagym-dms,n_missing_predictions,,0,0.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,accuracy,,0,0.87504518181161
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,f1,,0,0.12370088719898606
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,fn,,0,3329.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,fp,,0,128.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,macro_mean_auprc,,0,0.4701089571982847
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,macro_mean_auroc,,1,0.7185548250522593
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,macro_median_auprc,,0,0.38340346551995563
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,macro_median_auroc,,0,0.7193136791058018
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,n_test_genes,,0,27666.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,precision,,0,0.6559139784946236
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,recall,,0,0.06828995242093479
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,specificity,,0,0.994687253559125
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,tn,,0,23965.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality,tp,,0,244.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,accuracy,,0,0.8751174727101858
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,best_layer,,0,4.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,f1,,0,0.12108878148053931
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,fn,,0,3335.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,fp,,0,120.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.4741182118786678
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.35840009958787594
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.4432785277750865
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.447259553446014
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.46454660926973457
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.4741182118786678
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.4672022244218291
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.4701089571982847
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.7249641464308614
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.6417444006503269
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6976519022124159
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6984114125273387
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.7153241867324573
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7249641464308614
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.7178582073333732
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7185548250522593
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.39637814840389457
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7301067478857415
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,precision,,0,0.664804469273743
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,recall,,0,0.06661069129582983
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,specificity,,0,0.9950193002116797
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,tn,,0,23973.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,bacbench-essentiality-layer-sweep,tp,,0,238.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna,accuracy,,0,0.109375
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna,f1,,1,0.08645833333333333
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna,n_classes,,0,128.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna,n_test,,0,128.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna,n_train,,0,512.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.109375
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.015625
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.0625
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.0546875
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.09375
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.109375
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.1015625
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.109375
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,6.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.08645833333333333
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.004150390625
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.047309027777777776
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.04036458333333333
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.07473958333333333
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.08151041666666667
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.07786458333333333
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.08645833333333333
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.18181477574969462
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.015260343855090622
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.010264788239513727
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.0966487590357011
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.03522196471774156
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.44418012604160684
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.13261431072263483
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.004763700926554588
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.16803196660338787
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,nan
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.05587467228921345
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,blat_ecolx_spearman,,0,0.015260343855090622
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,macro_auc,,0,0.5592464865276355
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,macro_mcc,,0,0.08393124784094831
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,macro_spearman,,1,0.11446754081811392
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,n_assays,,0,11.0
+ProkBERT-mini,glmb:35874e63ceb426b852f4cece,rnagym-dms,n_missing_predictions,,0,697.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,accuracy,,0,0.8708523096942095
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,f1,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,fn,,0,3573.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,fp,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,macro_mean_auprc,,0,0.2775448288498394
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,macro_mean_auroc,,1,0.5565318019972378
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,macro_median_auprc,,0,0.11468108300611617
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,macro_median_auroc,,0,0.569860384785449
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,n_test_genes,,0,27666.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,precision,,0,nan
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,recall,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,specificity,,0,1.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,tn,,0,24093.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality,tp,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,accuracy,,0,0.8708523096942095
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,best_layer,,0,1.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,f1,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,fn,,0,3573.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,fp,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.29390878260751024
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.2646056762446002
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.29390878260751024
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.29623838427360394
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.28971561377562277
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.28757015500959227
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.2801471164727418
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.2775448288498394
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.575819766410978
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.5328052433659587
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.575819766410978
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.5756282870770101
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.5721345958141343
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.5692400931101256
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.5621842736228314
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.5565318019972378
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.11596818943160525
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.6000217717759628
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,precision,,0,nan
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,recall,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,specificity,,0,1.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,tn,,0,24093.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,bacbench-essentiality-layer-sweep,tp,,0,0.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna,accuracy,,0,0.015625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna,f1,,1,0.005642361111111111
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna,n_classes,,0,128.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna,n_test,,0,128.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna,n_train,,0,512.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.015625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.015625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.015625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.015625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0078125
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.0078125
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.015625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.015625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,6.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.005642361111111111
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.0054415422885572134
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.001291141456582633
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.003038194444444444
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.0009765625
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.0008223684210526315
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.003208705357142857
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.005642361111111111
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.013131618513544491
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.1564349874492587
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.15657771714479407
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.17976261791774434
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.0212396607046775
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.12936412129784292
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.0762450623573609
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.09137346829519075
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.3477707924665769
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,nan
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.1244321238258883
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,blat_ecolx_spearman,,0,0.1564349874492587
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,macro_auc,,0,0.5671768406222224
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,macro_mcc,,0,0.10030920757483346
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,macro_spearman,,1,0.12963321699728786
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,n_assays,,0,11.0
+ProkBERT-mini-c,glmb:59dd1caa23d1b930e65627b5,rnagym-dms,n_missing_predictions,,0,697.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,accuracy,,0,0.8741415455794116
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,f1,,0,0.1321036889332004
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,fn,,0,3308.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,fp,,0,174.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,macro_mean_auprc,,0,0.41974872334108776
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,macro_mean_auroc,,1,0.6788954163594996
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,macro_median_auprc,,0,0.35595298936546127
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,macro_median_auroc,,0,0.6552132000709682
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,n_test_genes,,0,27666.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,precision,,0,0.6036446469248291
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,recall,,0,0.07416736635880213
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,specificity,,0,0.9927779853069356
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,tn,,0,23919.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality,tp,,0,265.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,accuracy,,0,0.8750813272608978
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,best_layer,,0,12.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,f1,,0,0.15666178623718888
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,fn,,0,3252.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,fp,,0,204.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.45134667831570596
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.37769484690938904
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.38317241920611245
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.39614565690994996
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.398102549509367
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.4100246152485825
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.41450657555081016
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.41457703702740295
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.43104117518643104
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.44314514249694087
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.43987606281408775
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.4442435686419955
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.4474203126038614
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.45134667831570596
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,13,0,0.4456265140950463
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,14,0,0.4469100370155343
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,15,0,0.4481626293210148
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,16,0,0.43706840243394113
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,17,0,0.4323318096574434
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,18,0,0.42762044001964944
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auprc,19,0,0.41974872334108776
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.70530980958474
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.6599220651295999
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6646883053719048
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6739180381929709
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6747678463672933
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.67482535989851
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.6755431856443979
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.6803925855846271
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.6901210574829677
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.6955895389321402
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.6906510632059523
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.6926220241971947
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.7036427926653611
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.70530980958474
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,13,0,0.6957429222331449
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,14,0,0.6923409350265941
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,15,0,0.700292433067853
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,16,0,0.6911566538452361
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,17,0,0.6847231962912435
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,18,0,0.6852292553715357
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_mean_auroc,19,0,0.6788954163594996
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.40803124477602953
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.689738252358386
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,precision,,0,0.6114285714285714
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,recall,,0,0.08984047019311503
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,specificity,,0,0.9915328103598555
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,tn,,0,23889.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,bacbench-essentiality-layer-sweep,tp,,0,321.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna,accuracy,,0,0.0625
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna,f1,,1,0.046502976190476185
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna,n_classes,,0,128.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna,n_test,,0,128.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna,n_train,,0,512.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.15625
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0546875
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.078125
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.09375
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0703125
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.125
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.1171875
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.1015625
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.1171875
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.09375
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.0859375
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.1484375
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.1328125
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.125
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,13,0,0.140625
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,14,0,0.15625
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,15,0,0.1484375
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,16,0,0.1171875
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,17,0,0.09375
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,18,0,0.0703125
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,accuracy,19,0,0.0625
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,14.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.11432291666666666
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.040017361111111115
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.056423611111111105
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.0634300595238095
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.053906249999999996
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.08947172619047619
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.08906249999999999
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.08645833333333333
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.08608630952380952
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.07161458333333333
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.06901041666666666
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.11171874999999999
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.10546874999999999
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.09817708333333333
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,13,0,0.10807291666666666
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,14,0,0.11432291666666666
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,15,0,0.10963541666666665
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,16,0,0.08906249999999999
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,17,0,0.07604166666666666
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,18,0,0.06640625
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,f1,19,0,0.046502976190476185
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.16445077703510558
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.04784382511271914
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.014878224587584052
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.05418285914438648
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.034072698569886276
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.2062392974584812
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.19667806784563802
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.010308382468166304
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.05941918005536574
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.33167970224983323
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.054437073541805915
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,blat_ecolx_spearman,,0,0.04784382511271914
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,macro_auc,,0,0.5560609787660211
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,macro_mcc,,0,0.07836263505621845
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,macro_spearman,,1,0.10674455346081563
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,n_assays,,0,11.0
+NTv3-100M,glmb:ffc3488c7c0b5ca8bb6e7ed5,rnagym-dms,n_missing_predictions,,0,0.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,accuracy,,0,0.8773946360153256
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,f1,,0,0.21335807050092764
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,fn,,0,3113.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,fp,,0,279.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,macro_mean_auprc,,0,0.5101709218154535
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,macro_mean_auroc,,1,0.7429939688842642
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,macro_median_auprc,,0,0.4764928642362731
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,macro_median_auroc,,0,0.718189468089818
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,n_test_genes,,0,27666.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,precision,,0,0.6224627875507442
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,recall,,0,0.12874335292471312
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,specificity,,0,0.9884198729921554
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,tn,,0,23814.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality,tp,,0,460.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,accuracy,,0,0.8814429263355743
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,best_layer,,0,8.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,f1,,0,0.27111111111111114
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,fn,,0,2963.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,fp,,0,317.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.556918918647283
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.3474380182663025
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.36163017904771216
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.391398643083112
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.4305749669574423
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.46045934164402813
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.4906651015328937
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.5260278463196033
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.5492263986655913
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.556918918647283
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.5459838310343434
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.5433911194461474
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.5260456460279355
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.5101709218154535
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.761135221170864
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.6261375902320422
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6396055384209116
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6586190972870821
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6972807778343709
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7127188102117138
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.730839407530032
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7482728369557757
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.7550075631911244
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.761135221170864
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.7546984395629476
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.7536342177464399
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.7429617606972971
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.7429939688842642
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.5502533124795688
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7632769531018984
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,precision,,0,0.6580366774541532
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,recall,,0,0.17072488105233696
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,specificity,,0,0.9868426513925207
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,tn,,0,23776.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,bacbench-essentiality-layer-sweep,tp,,0,610.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna,accuracy,,0,0.109375
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna,f1,,1,0.07994791666666666
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna,n_classes,,0,128.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna,n_test,,0,128.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna,n_train,,0,512.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.2265625
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.015625
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.015625
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0234375
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.0234375
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.0625
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.125
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.2265625
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.203125
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.171875
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.125
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.1171875
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.109375
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,7.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.16097470238095235
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.00012112403100775194
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.00203659188034188
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.003426535087719298
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.010230654761904762
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.011501736111111112
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.038975694444444445
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.07779017857142856
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.16097470238095235
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.1361111111111111
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.10275297619047619
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.07020089285714286
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.06160714285714286
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.07994791666666666
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.11786413329881784
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.16627991795543098
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.09860972399726795
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.23440667134491686
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.10443723918279749
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.09392674888965374
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.32088074327825483
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.07883111756970827
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.018015999344464677
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.2949870241607149
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.3616102592709171
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,blat_ecolx_spearman,,0,0.16627991795543098
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,macro_auc,,0,0.5820685190282808
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,macro_mcc,,0,0.11478583133812346
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,macro_spearman,,1,0.17180450711754042
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,n_assays,,0,11.0
+GenomeOcean-100M,glmb:a5a68d556cd33d19e3a28290,rnagym-dms,n_missing_predictions,,0,0.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,accuracy,,0,0.8725511458107424
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,f1,,0,0.07063784923563521
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,fn,,0,3439.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,fp,,0,87.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,macro_mean_auprc,,0,0.4114793353536642
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,macro_mean_auroc,,1,0.6798667320331991
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,macro_median_auprc,,0,0.34588066470942824
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,macro_median_auroc,,0,0.6636850198119345
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,n_test_genes,,0,27666.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,precision,,0,0.6063348416289592
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,recall,,0,0.037503498460677305
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,specificity,,0,0.9963889926534678
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,tn,,0,24006.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality,tp,,0,134.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,accuracy,,0,0.8729126003036217
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,best_layer,,0,28.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,f1,,0,0.06885593220338983
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,fn,,0,3443.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,fp,,0,73.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.4104256104685275
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.3131850688953656
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.3102491092035715
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.3393301074256276
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.38188878926871084
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.38615727516006604
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.384964654641329
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.37341704628038014
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.3752553199382304
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.37683594050851504
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.38178127696779013
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.37646404529422584
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.3737274289474061
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.38186523987773646
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,13,0,0.37422236536091924
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,14,0,0.36556629608274005
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,15,0,0.3578679385203002
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,16,0,0.3675864964191566
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,17,0,0.36082402576860506
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,18,0,0.3651232307511212
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,19,0,0.36067533487860126
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,20,0,0.3649389152265764
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,21,0,0.36481566026094603
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,22,0,0.3691625978607765
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,23,0,0.37385833071080793
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,24,0,0.3710978316551567
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,25,0,0.3725469777117618
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,26,0,0.38264647426173426
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,27,0,0.3907537507607495
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,28,0,0.4104256104685275
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auprc,29,0,0.4114793353536642
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.681621716284222
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.6203669971266461
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6181377442936882
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.636884511217244
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6628655562869228
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.6656559190199531
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.6676837490301956
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.6637257914610376
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.6633908578512142
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.6635573631431019
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.6609005064228702
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.6567755935317572
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.6527197403095265
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.6646181643350919
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,13,0,0.6574648136999437
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,14,0,0.6538761375571235
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,15,0,0.6437904601792055
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,16,0,0.650933482016243
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,17,0,0.6447699012284951
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,18,0,0.6535218803964852
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,19,0,0.6435232141784382
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,20,0,0.6455785864830724
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,21,0,0.6488424658611168
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,22,0,0.6520782552797205
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,23,0,0.6551352073759029
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,24,0,0.6510334229132647
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,25,0,0.6550963501006436
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,26,0,0.6614543465323582
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,27,0,0.6712557494496744
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,28,0,0.681621716284222
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_mean_auroc,29,0,0.6798667320331991
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.3418000154212545
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.6952140871725117
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,precision,,0,0.6403940886699507
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,recall,,0,0.03638399104394067
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,specificity,,0,0.9969700742954385
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,tn,,0,24020.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,bacbench-essentiality-layer-sweep,tp,,0,130.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna,accuracy,,0,0.09375
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna,f1,,1,0.06432291666666666
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna,n_classes,,0,128.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna,n_test,,0,128.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna,n_train,,0,512.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.09375
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.0078125
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0234375
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.046875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.0625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.0546875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.0625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.078125
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.0546875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.046875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.0546875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,13,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,14,0,0.046875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,15,0,0.046875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,16,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,17,0,0.0703125
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,18,0,0.0703125
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,19,0,0.0625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,20,0,0.0546875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,21,0,0.078125
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,22,0,0.0546875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,23,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,24,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,25,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,26,0,0.0546875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,27,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,28,0,0.0546875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,accuracy,29,0,0.09375
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,29.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.06432291666666666
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.00390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.00390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.015625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.027213541666666667
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.04051339285714285
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.03790922619047619
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.03843005952380952
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.04702380952380952
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.02265625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.03255208333333333
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.025260416666666667
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.03098958333333333
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,13,0,0.021875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,14,0,0.031249999999999997
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,15,0,0.029575892857142856
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,16,0,0.02734375
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,17,0,0.049479166666666664
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,18,0,0.046875
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,19,0,0.042187499999999996
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,20,0,0.0390625
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,21,0,0.054055059523809526
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,22,0,0.03645833333333333
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,23,0,0.030877976190476192
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,24,0,0.03255208333333333
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,25,0,0.03125
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,26,0,0.04088541666666667
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,27,0,0.02734375
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,28,0,0.03645833333333333
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,f1,29,0,0.06432291666666666
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.09888626696248354
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.06808373630771267
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.006846107325519906
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.03827096949740632
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.004635233432766711
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.091885703356069
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.15648287749015757
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.026912043228999413
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.0678888830762704
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.10441051118028462
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.05260194216351408
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,blat_ecolx_spearman,,0,0.06808373630771267
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,macro_auc,,0,0.538913339802165
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,macro_mcc,,0,0.05796600426803904
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,macro_spearman,,1,0.06517311582010765
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,n_assays,,0,11.0
+gLM2-150M,glmb:97f894dbf406d32617f34fdf,rnagym-dms,n_missing_predictions,,0,0.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,accuracy,,0,0.8772861996674619
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,f1,,0,0.25921885228016583
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,fn,,0,2979.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,fp,,0,416.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,macro_mean_auprc,,0,0.5229328248386655
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,macro_mean_auroc,,1,0.7440898750064682
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,macro_median_auprc,,0,0.5316179455508949
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,macro_median_auroc,,0,0.7059292803530668
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,n_test_genes,,0,27666.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,precision,,0,0.5881188118811881
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,recall,,0,0.16624685138539042
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,specificity,,0,0.9827335740671564
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,tn,,0,23677.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality,tp,,0,594.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,accuracy,,0,0.8840453986843056
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,best_layer,,0,10.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,f1,,0,0.30832255282449333
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,fn,,0,2858.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,fp,,0,350.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.5728475391540532
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.3355545633550769
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.3626166825420264
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.3896045902644931
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.43552944224105306
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.4635436115216119
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.5161055730157245
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.5518340672806749
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.5591781639414705
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.5681008573100983
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.5722939161702184
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.5728475391540532
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.5633561205721774
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.5439249902179752
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,13,0,0.5270241984909046
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auprc,14,0,0.5229328248386655
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.7582601638447997
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.6179745789616765
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6435249503620599
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6675768710286848
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6944443076842569
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7108849864184275
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.7420530823826811
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7527714977630479
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.7534890622528168
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.7567333134411942
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.757497898956264
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.7582601638447997
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.7558979834762182
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.7434927134922072
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,13,0,0.7450313912473786
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_mean_auroc,14,0,0.7440898750064682
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.5977061563751507
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7549751611567803
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,precision,,0,0.6713615023474179
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,recall,,0,0.20011195074167365
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,specificity,,0,0.9854729589507326
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,tn,,0,23743.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,bacbench-essentiality-layer-sweep,tp,,0,715.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna,accuracy,,0,0.1328125
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna,f1,,1,0.09036458333333333
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna,n_classes,,0,128.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna,n_test,,0,128.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna,n_train,,0,512.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.4140625
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.046875
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.0234375
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0625
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.0703125
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.1328125
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.28125
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.3671875
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.4140625
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.40625
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.359375
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.25
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.203125
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,13,0,0.171875
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,accuracy,14,0,0.1328125
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,8.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.3447916666666666
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.00012112403100775194
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.017476533882783883
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.005605722402597402
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.03229166666666666
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.041015625
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.08763020833333332
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.21397569444444442
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.2869791666666667
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.3447916666666666
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.33151041666666664
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.28151041666666665
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.1919270833333333
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.15338541666666666
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,13,0,0.12031249999999999
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,f1,14,0,0.09036458333333333
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.12993490888054882
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.372504235037368
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.35392449857985003
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.2897437738540587
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.13221124289808234
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.2561408197613687
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.27137234712792047
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.20341207918784535
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.03886555762022385
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.3026544929497714
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.3756440258770856
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,blat_ecolx_spearman,,0,0.372504235037368
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,macro_auc,,0,0.6253868418344456
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,macro_mcc,,0,0.17869187267768705
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,macro_spearman,,1,0.24785527107037486
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,n_assays,,0,11.0
+GenomeOcean-500M,glmb:803cab8bb2aac55babc41b35,rnagym-dms,n_missing_predictions,,0,0.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,accuracy,,0,0.8734186365936528
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,f1,,0,0.10935910478128179
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,fn,,0,3358.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,fp,,0,144.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,macro_mean_auprc,,0,0.42216609669658817
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,macro_mean_auroc,,1,0.6952713452717231
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,macro_median_auprc,,0,0.3622203499357797
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,macro_median_auroc,,0,0.7064654917499558
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,n_test_genes,,0,27666.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,precision,,0,0.5988857938718662
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,recall,,0,0.06017352364959418
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,specificity,,0,0.9940231602540157
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,tn,,0,23949.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality,tp,,0,215.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,accuracy,,0,0.8734186365936528
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,best_layer,,0,32.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,f1,,0,0.10935910478128179
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,fn,,0,3358.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,fp,,0,144.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.42216609669658817
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.28947829954860527
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.3837961171237775
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.38186586013828205
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.38593032194164223
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.3919290629521081
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.3854422668795518
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.3796136916092111
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.376655309610106
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.38522168750410035
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.38187293671128164
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.3790616943778734
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.3818953874845771
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.3845602017551325
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,13,0,0.37457471601877934
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,14,0,0.3781480535777613
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,15,0,0.3792845442878935
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,16,0,0.38176653343299244
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,17,0,0.37619879330880945
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,18,0,0.3785294431209759
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,19,0,0.39011495016853126
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,20,0,0.38834767620307803
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,21,0,0.38677904538529967
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,22,0,0.38989454244351096
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,23,0,0.39327214991553405
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,24,0,0.38943804166170115
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,25,0,0.39113984191476403
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,26,0,0.3961612753904855
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,27,0,0.39843741739559885
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,28,0,0.40236552575972095
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,29,0,0.40094930716495036
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,30,0,0.39922539840390664
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,31,0,0.421955591810201
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auprc,32,0,0.42216609669658817
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.6952713452717231
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.5802030347965932
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6609756058833797
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.6590566198302312
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.6627480562506577
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.661540532197696
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.6610689365184449
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.6597580738943579
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.6555759957412595
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.6597579425671896
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.6532221699462092
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.6472247152012305
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.6536245153054154
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.657677584785985
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,13,0,0.6508331888700531
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,14,0,0.662730365471492
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,15,0,0.665451690585502
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,16,0,0.6686977682844231
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,17,0,0.6669497980960635
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,18,0,0.6695985230928617
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,19,0,0.675726163049514
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,20,0,0.6771994734298188
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,21,0,0.6748724914990046
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,22,0,0.678659329707941
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,23,0,0.6838087035861489
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,24,0,0.68081728569574
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,25,0,0.6817967057904128
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,26,0,0.6817031373169207
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,27,0,0.6798617957171176
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,28,0,0.6837682168654594
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,29,0,0.6801174204299795
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,30,0,0.6808870808931963
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,31,0,0.6948499126958247
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_mean_auroc,32,0,0.6952713452717231
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.3622203499357797
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7064654917499558
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,precision,,0,0.5988857938718662
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,recall,,0,0.06017352364959418
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,specificity,,0,0.9940231602540157
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,tn,,0,23949.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,bacbench-essentiality-layer-sweep,tp,,0,215.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna,accuracy,,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna,f1,,1,0.05952380952380952
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna,n_classes,,0,128.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna,n_test,,0,128.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna,n_train,,0,512.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.1015625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0234375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.0546875
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.046875
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0390625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.09375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.09375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.09375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.09375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.1015625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.1015625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.09375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,13,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,14,0,0.0859375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,15,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,16,0,0.0859375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,17,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,18,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,19,0,0.0859375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,20,0,0.0859375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,21,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,22,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,23,0,0.0625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,24,0,0.0703125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,25,0,0.0703125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,26,0,0.0390625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,27,0,0.0625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,28,0,0.0703125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,29,0,0.0703125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,30,0,0.0625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,31,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,accuracy,32,0,0.078125
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,10.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.07473958333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.016927083333333332
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.035807291666666664
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.027777777777777776
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.025390625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.04036458333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.05887276785714285
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.06212797619047619
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.06692708333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.0640625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.07343749999999999
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.07473958333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.07135416666666666
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.06171875
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,13,0,0.05859374999999999
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,14,0,0.058333333333333334
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,15,0,0.05833333333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,16,0,0.06223958333333332
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,17,0,0.05130208333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,18,0,0.054427083333333334
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,19,0,0.06119791666666666
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,20,0,0.06119791666666666
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,21,0,0.05989583333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,22,0,0.05859375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,23,0,0.04687499999999999
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,24,0,0.05
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,25,0,0.046093749999999996
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,26,0,0.0265625
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,27,0,0.04401041666666666
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,28,0,0.046093749999999996
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,29,0,0.04270833333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,30,0,0.04348958333333333
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,31,0,0.05859375
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,f1,32,0,0.05952380952380952
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.0035198918493485813
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.08958162941292055
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.008560602914306234
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.132553991626239
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.050176698787598055
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.2492920630841014
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.11146199709733935
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.06797060740664747
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.17983873611550205
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.10407301570353741
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.055118152635164785
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,blat_ecolx_spearman,,0,0.08958162941292055
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,macro_auc,,0,0.5490580903826718
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,macro_mcc,,0,0.07060114653739558
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,macro_spearman,,1,0.09564976242115499
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,n_assays,,0,11.0
+gLM2-650M,glmb:f6c8e54295f55232d7502c3c,rnagym-dms,n_missing_predictions,,0,0.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,accuracy,,0,0.8712860550856647
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,f1,,0,0.019278435692646655
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,fn,,0,3538.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,fp,,0,23.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,macro_mean_auprc,,0,0.41710337540194004
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,macro_mean_auroc,,1,0.7027799255755736
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,macro_median_auprc,,0,0.3363085462765686
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,macro_median_auroc,,0,0.6577414394701047
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,n_test_genes,,0,27666.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,precision,,0,0.603448275862069
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,recall,,0,0.009795689896445563
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,specificity,,0,0.9990453658739052
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,tn,,0,24070.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality,tp,,0,35.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,accuracy,,0,0.875009036362322
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,best_layer,,0,11.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,f1,,0,0.21906052393857273
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,fn,,0,3088.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,fp,,0,370.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.5641991861467076
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.2167585208900593
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.37989817443544116
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.4372331834543415
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.49851816369875784
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.533915593413141
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.5422230053807854
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.5565680661064002
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.5750944062774219
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.5800835755560173
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.5558080833177153
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.5429338166513393
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.5641991861467076
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.4423894755722164
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,13,0,0.40461632479063636
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,14,0,0.422174630159194
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,15,0,0.4084686016530402
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,16,0,0.42007873002051205
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,17,0,0.4306647729932188
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,18,0,0.4231334389815097
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,19,0,0.42668908619817686
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,20,0,0.42535893849318746
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,21,0,0.42856581045000114
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,22,0,0.4259001208667789
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,23,0,0.41958998097510125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,24,0,0.4210383211463802
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,25,0,0.4272173944581038
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,26,0,0.4222136772773014
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,27,0,0.4378005392727973
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,28,0,0.4284642439539086
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,29,0,0.4305042788086918
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,30,0,0.4300967894879999
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,31,0,0.42358545785010066
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auprc,32,0,0.41710337540194004
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.7779211916075683
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.4320890210070966
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.6533703987103332
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.7127643790108041
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.7362965100875596
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7570438023185339
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.7577641544118497
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7662324773872623
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.7742050972436911
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.77782162911326
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.7626342751719973
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.7554241848404
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.7779211916075683
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.723337545733377
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,13,0,0.703782082890782
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,14,0,0.7014460287497618
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,15,0,0.6964327359179686
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,16,0,0.6985042031643299
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,17,0,0.7044198997656648
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,18,0,0.7011032221257398
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,19,0,0.7037949953690741
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,20,0,0.6987876500456781
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,21,0,0.7040827956575288
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,22,0,0.7035080865461055
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,23,0,0.7040647208646977
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,24,0,0.7021060760642835
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,25,0,0.7028051678643387
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,26,0,0.7009370436356982
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,27,0,0.7153609049672451
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,28,0,0.710272413109573
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,29,0,0.707360591524585
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,30,0,0.7019738028295333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,31,0,0.7010033363638194
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_mean_auroc,32,0,0.7027799255755736
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.6139087928726842
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7724557527722528
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,precision,,0,0.5672514619883041
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,recall,,0,0.1357402742793171
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,specificity,,0,0.9846428423193458
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,tn,,0,23723.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,bacbench-essentiality-layer-sweep,tp,,0,485.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna,accuracy,,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna,f1,,1,0.0234375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna,n_classes,,0,128.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna,n_test,,0,128.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna,n_train,,0,512.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.40625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.046875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.0625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.15625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.25
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.3046875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.359375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.40625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.3671875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.2890625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.0859375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.0234375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,13,0,0.015625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,14,0,0.0390625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,15,0,0.046875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,16,0,0.0390625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,17,0,0.0546875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,18,0,0.046875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,19,0,0.0390625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,20,0,0.0546875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,21,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,22,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,23,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,24,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,25,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,26,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,27,0,0.0390625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,28,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,29,0,0.0546875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,30,0,0.0390625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,31,0,0.0546875
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,accuracy,32,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,7.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.33177083333333335
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.00019054878048780488
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.029368041497975707
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.034505208333333336
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.10130208333333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.1903645833333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.2424479166666666
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.2986979166666667
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.33177083333333335
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.3169270833333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.3130208333333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.24884672619047618
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.07161458333333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.020833333333333332
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,13,0,0.009114583333333332
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,14,0,0.03125
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,15,0,0.03697916666666667
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,16,0,0.033854166666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,17,0,0.038281249999999996
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,18,0,0.03958333333333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,19,0,0.034375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,20,0,0.041666666666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,21,0,0.026041666666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,22,0,0.0234375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,23,0,0.02395833333333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,24,0,0.0265625
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,25,0,0.026041666666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,26,0,0.026041666666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,27,0,0.03177083333333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,28,0,0.026041666666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,29,0,0.041666666666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,30,0,0.03177083333333333
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,31,0,0.041666666666666664
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,f1,32,0,0.0234375
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.2752691274212752
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.4771355677729683
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.4736463474516979
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.08948599649475744
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.2156338444348912
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.47155976089190543
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.27430335302251313
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.2926397856707927
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.10581340594412003
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.4133276664884283
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.4117257367147054
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,blat_ecolx_spearman,,0,0.4771355677729683
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,macro_auc,,0,0.664136332262613
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,macro_mcc,,0,0.23896865363861483
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,macro_spearman,,1,0.3182309629370959
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,n_assays,,0,11.0
+"Evo 1.5 (8k, 7B)",glmb:1746872b80b27764a840cc61,rnagym-dms,n_missing_predictions,,0,0.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,accuracy,,0,0.8708523096942095
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,f1,,0,0.0005594405594405594
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,fn,,0,3572.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,fp,,0,1.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,macro_mean_auprc,,0,0.42603659982577674
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,macro_mean_auroc,,1,0.6991704005551399
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,macro_median_auprc,,0,0.36407167032046717
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,macro_median_auroc,,0,0.7052900822047431
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,n_test_genes,,0,27666.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,n_test_genomes_scored,,0,9.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,precision,,0,0.5
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,recall,,0,0.000279876854184159
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,specificity,,0,0.9999584941684306
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,tn,,0,24092.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality,tp,,0,1.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,accuracy,,0,0.8844429986264729
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,best_layer,,0,5.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,f1,,0,0.32223871104515583
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,fn,,0,2813.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,fp,,0,384.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,,0,0.5766009647172251
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,0,0,0.34295503509699976
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,1,0,0.42284184907391736
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,2,0,0.4928443206002042
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,3,0,0.49536743864212646
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,4,0,0.5204665638413887
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,5,0,0.5766009647172251
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,6,0,0.5796860738733126
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,7,0,0.564973918622849
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,8,0,0.552802042576098
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,9,0,0.5574282186813181
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,10,0,0.5657919337885405
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,11,0,0.5618613782326811
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,12,0,0.5781952299450358
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,13,0,0.5341212724285117
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,14,0,0.5173320538071622
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,15,0,0.42603659982577674
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auprc,16,0,0.42603659982577674
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,,1,0.7879970163024751
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,0,0,0.6353373572568672
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,1,0,0.7017662033522929
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,2,0,0.7332382772731895
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,3,0,0.7403909791560164
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,4,0,0.7488533635064222
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,5,0,0.7879970163024751
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,6,0,0.7860697534697397
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,7,0,0.7812294421471216
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,8,0,0.77630312625617
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,9,0,0.7708922996566246
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,10,0,0.7674829493839331
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,11,0,0.7709830759527689
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,12,0,0.7785990264819529
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,13,0,0.7595448760476431
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,14,0,0.7516943792189336
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,15,0,0.6991704005551399
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_mean_auroc,16,0,0.6991704005551399
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_median_auprc,,0,0.6158385724365947
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,macro_median_auroc,,0,0.7531663908332195
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,n_test_genes,,0,27666.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,n_test_genomes_scored,,0,9.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,precision,,0,0.6643356643356644
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,recall,,0,0.2127064091799608
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,specificity,,0,0.9840617606773752
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,tn,,0,23709.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,bacbench-essentiality-layer-sweep,tp,,0,760.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna,accuracy,,0,0.0703125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna,f1,,1,0.05130208333333333
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna,n_classes,,0,128.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna,n_test,,0,128.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna,n_train,,0,512.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,,0,0.4375
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,0,0,0.0078125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,1,0,0.03125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,2,0,0.0390625
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,3,0,0.0546875
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,4,0,0.078125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,5,0,0.328125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,6,0,0.3515625
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,7,0,0.3671875
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,8,0,0.40625
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,9,0,0.421875
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,10,0,0.4375
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,11,0,0.4296875
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,12,0,0.296875
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,13,0,0.2734375
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,14,0,0.1015625
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,15,0,0.0703125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,accuracy,16,0,0.0703125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,best_layer,,0,10.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,,1,0.37213541666666666
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,0,0,0.00012112403100775194
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,1,0,0.013470123626373627
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,2,0,0.020194215506715508
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,3,0,0.03713768115942029
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,4,0,0.03870192307692308
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,5,0,0.2783854166666666
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,6,0,0.28999255952380953
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,7,0,0.3123697916666667
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,8,0,0.3363715277777778
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,9,0,0.3578125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,10,0,0.37213541666666666
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,11,0,0.3677083333333333
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,12,0,0.2453125
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,13,0,0.2270833333333333
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,14,0,0.07708333333333334
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,15,0,0.05130208333333333
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,f1,16,0,0.05130208333333333
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,n_classes,,0,128.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,n_test,,0,128.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,dgeb-ec-classification-dna-layer-sweep,n_train,,0,512.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman,,0,0.305864021783583
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,BLAT_ECOLX_Firnberg_2014_spearman,,0,0.43895770976716536
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,BLAT_ECOLX_Jacquier_2013_spearman,,0,0.45106955529711334
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,CCDB_ECOLI_Adkar_2012_spearman,,0,0.14580449795030312
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,ESTA_BACSU_Nutschel_2020_spearman,,0,0.321254153070025
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,F7YBW8_MESOW_Ding_2023_spearman,,0,0.3849055163429855
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,IF1_ECOLI_Kelsic_2016_spearman,,0,0.2898582812022188
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,MLAC_ECOLI_MacRae_2023_spearman,,0,0.31993730559051836
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,PSAE_PICP2_Tsuboyama_2023_1PSE_spearman,,0,0.32778460926825453
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,Q837P4_ENTFA_Meier_2023_spearman,,0,0.3658211640390618
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,RNC_ECOLI_Weeks_2023_spearman,,0,0.41158475800514416
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,blat_ecolx_spearman,,0,0.43895770976716536
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,macro_auc,,0,0.6772995141262421
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,macro_mcc,,0,0.26723544706064184
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,macro_spearman,,1,0.34207650657421573
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,n_assays,,0,11.0
+Evo2-7B (residual stream),glmb:80643ec8dfc333d8344f7a21,rnagym-dms,n_missing_predictions,,0,0.0

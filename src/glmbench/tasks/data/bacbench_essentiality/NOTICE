@@ -1,0 +1,19 @@
+BacBench gene-essentiality DNA data — provenance
+=================================================
+
+Dataset : macwiatrak/bacbench-essential-genes-dna  (HuggingFace)
+Revision: 0210c2445e89c765c0fe5d69618b8a6c262e5d30
+License : Apache-2.0
+Upstream: Database of Essential Genes (DEG, CC-BY-4.0) + NCBI GenBank/RefSeq (public domain)
+Cite    : "BacBench: Evaluating Genomic Language Models for Bacteria" (ICLR 2026 submission).
+
+169,408 genes across 51 bacterial genomes / 37 species, binary essentiality labels. The
+genus-disjoint train(37) / validation(9) / test(9) genome splits are the dataset's native
+HuggingFace splits.
+
+gLMBench vendors, per split, a compact CSV (genome_name, genus, essential, sequence) where
+``sequence`` is the BacBench DNA-LM model input — CDS + 128 bp upstream promoter,
+strand-aware, NO reverse complement — extracted once at fetch time by the byte-identical
+recipe in ``glmbench.tasks.bacbench_essentiality_data.get_dna_seq`` (recycled from upstream
+``bacbench/modeling/embed_dna.py``, commit 64b7d458). The heavy CSVs are gitignored; the
+sha256-pinned ``manifest.yaml`` + the committed tiny fixture make the integrity gate real.

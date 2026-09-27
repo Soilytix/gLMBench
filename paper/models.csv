@@ -1,0 +1,14 @@
+model_id,params_measured,adapter,spec,paper_model_hash,paper_record,public_route_model_hash,public_route_record,hub_repo,source_checkpoint
+LOAM-25M,25483520,loam@0.3.0,specs/loam/LOAM-25M.yaml,glmb:ef7a2f14704c7258a9162958,records/glmb_ef7a2f14704c7258a9162958.json,glmb:aab59939ae4409c721f73862,public_route/glmb_aab59939ae4409c721f73862.json,Soilytix/LOAM-25M,checkpoint-00119000
+LOAM-100M,102914048,loam@0.3.0,specs/loam/LOAM-100M.yaml,glmb:57ca8719fc72b4e44e70ccc3,records/glmb_57ca8719fc72b4e44e70ccc3.json,glmb:cb7218ff85baac504a5e52d8,public_route/glmb_cb7218ff85baac504a5e52d8.json,Soilytix/LOAM-100M,checkpoint-00119000
+LOAM-340M,339993600,loam@0.3.0,specs/loam/LOAM-340M.yaml,glmb:7e22ae6e6afb5a856ff23dc2,records/glmb_7e22ae6e6afb5a856ff23dc2.json,glmb:6529d1ceed77f1d9f14442ad,public_route/glmb_6529d1ceed77f1d9f14442ad.json,Soilytix/LOAM-340M,checkpoint-00119134
+LOAM-624M,624229120,loam@0.3.0,specs/loam/LOAM-624M.yaml,glmb:24879d8765197f4a0db44583,records/glmb_24879d8765197f4a0db44583.json,glmb:050937866abde4ef6f0584da,public_route/glmb_050937866abde4ef6f0584da.json,Soilytix/LOAM-624M,checkpoint-00119000
+ProkBERT-mini,20642181,prokbert@0.2.0,specs/external/prokbert-mini.yaml,glmb:35874e63ceb426b852f4cece,records/glmb_35874e63ceb426b852f4cece.json,,,,
+ProkBERT-mini-c,24975380,prokbert@0.2.0,specs/external/prokbert-mini-c.yaml,glmb:59dd1caa23d1b930e65627b5,records/glmb_59dd1caa23d1b930e65627b5.json,,,,
+NTv3-100M,106463419,ntv3@0.1.0,specs/external/ntv3-100M.yaml,glmb:ffc3488c7c0b5ca8bb6e7ed5,records/glmb_ffc3488c7c0b5ca8bb6e7ed5.json,,,,
+GenomeOcean-100M,119556864,genomeocean@0.2.0,specs/external/genomeocean-100M.yaml,glmb:a5a68d556cd33d19e3a28290,records/glmb_a5a68d556cd33d19e3a28290.json,,,,
+gLM2-150M,152457600,glm2@0.1.0,specs/external/glm2-150M.yaml,glmb:97f894dbf406d32617f34fdf,records/glmb_97f894dbf406d32617f34fdf.json,,,,
+GenomeOcean-500M,541109760,genomeocean@0.2.0,specs/external/genomeocean-500M.yaml,glmb:803cab8bb2aac55babc41b35,records/glmb_803cab8bb2aac55babc41b35.json,,,,
+gLM2-650M,670613760,glm2@0.1.0,specs/external/glm2-650M.yaml,glmb:f6c8e54295f55232d7502c3c,records/glmb_f6c8e54295f55232d7502c3c.json,,,,
+"Evo 1.5 (8k, 7B)",6452781056,evo@0.1.0,specs/external/evo-1.5-8k.yaml,glmb:1746872b80b27764a840cc61,records/glmb_1746872b80b27764a840cc61.json,,,,
+Evo2-7B (residual stream),6483156736,evo2-arc@0.1.0,specs/external/evo2-arc-7b-resid.yaml,glmb:80643ec8dfc333d8344f7a21,records/glmb_80643ec8dfc333d8344f7a21.json,,,,

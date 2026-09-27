@@ -1,0 +1,19 @@
+reference_sheet_final.csv is redistributed from MarksLab-DasLab/RNAGym under the
+MIT License (text: src/glmbench/tasks/_vendor/rnagym/LICENSE). The DMS assays (also
+MIT) are fetched from upstream, not redistributed.
+
+Cite: Notin et al., "RNAGym: Large-scale Benchmarks for RNA Fitness and Structure
+Prediction", bioRxiv 2025.06.16.660049.
+
+Individual DMS assays retain their original primary-publication citations (e.g.,
+Firnberg et al. 2014 and Jacquier et al. 2013 for BLAT_ECOLX).
+
+The subset used here is the 11 assays with RNA_TYPE == "mRNA-coding" and
+ASSAY_DESCRIPTION == "PROK" in reference_sheet_final.csv: every assay of a
+protein-coding gene from a prokaryote that RNAGym lists. The per-assay CSVs are
+populated by scripts/fetch_rnagym_prok.py and pinned by sha256 in
+prok_coding_manifest.yaml.
+
+Upstream revisions: reference_sheet_final.csv from GitHub MarksLab-DasLab/RNAGym
+@ e7c064617c8bf6a3c2ef2ddb6238c1abde340602; the assays from the HuggingFace mirror
+Marks-lab/RNAgym @ bc6ccf4c5bf445ca25991f2a74448ae7e153b9f6.

@@ -1,0 +1,786 @@
+{
+  "adapter_name": "loam",
+  "adapter_version": "0.3.0",
+  "benchmark": {
+    "name": "full",
+    "version": "1.1"
+  },
+  "describe": {
+    "adapter_version": "0.3.0",
+    "batch_size": 8,
+    "capabilities": [
+      "embedding",
+      "logprob_embedding",
+      "per_token_logprobs",
+      "sequence_loglikelihood",
+      "tokenize"
+    ],
+    "checkpoint": "Soilytix/LOAM-25M",
+    "checkpoint_id": "checkpoint-00119000",
+    "config": "<redacted>",
+    "device": "auto",
+    "dtype": "auto",
+    "embedding_dim": 640,
+    "max_context": 8191,
+    "n_layers": 5,
+    "name": "loam",
+    "readout": "block_output",
+    "readout_adapter_version": "0.3.0",
+    "readout_evidence": "by_construction",
+    "readout_note": "The native LOAM runner walked the blocks itself and returned each block's output, without applying the final RMSNorm to embeddings (the log-prob head still goes through it: that is the model's forward).",
+    "real_tokens": "all non-BOS, non-pad token positions (BOS prepended for scoring)",
+    "token_budget": 16384,
+    "tokenizer": "nucleotide"
+  },
+  "glmbench_version": "0.1.0",
+  "model_hash": "glmb:ef7a2f14704c7258a9162958",
+  "model_spec": {
+    "adapter": "loam",
+    "adapter_version": "0.3.0",
+    "display_name": "LOAM-25M",
+    "model": {
+      "batch_size": 8,
+      "checkpoint": "Soilytix/LOAM-25M",
+      "checkpoint_id": "checkpoint-00119000",
+      "config": "<redacted>",
+      "dtype": "auto",
+      "require_tokenizer_hash": true,
+      "token_budget": 16384,
+      "weights_digest_cache": "<redacted>"
+    },
+    "runner": {
+      "backend": "local",
+      "extra": {},
+      "gpus": "<redacted>",
+      "image": null,
+      "python_exe": "<redacted>",
+      "scratch_dir": null
+    },
+    "weights_digest": {
+      "strategy": "file_sha256",
+      "value": null
+    }
+  },
+  "provenance": {
+    "data_manifest_hashes": {},
+    "host": "<redacted>",
+    "runner": {
+      "backend": "local",
+      "extra": {},
+      "gpus": "<redacted>",
+      "image": null,
+      "python_exe": "<redacted>",
+      "scratch_dir": null
+    },
+    "timestamp": "2026-09-01T15:30:16.698284+00:00"
+  },
+  "readout": "block_output",
+  "readout_adapter_version": "0.3.0",
+  "readout_evidence": "by_construction",
+  "readout_note": "The native LOAM runner walked the blocks itself and returned each block's output, without applying the final RMSNorm to embeddings (the log-prob head still goes through it: that is the model's forward).",
+  "tasks": [
+    {
+      "metadata": {
+        "aggregation": "macro mean (primary) + median across test genomes",
+        "embedding_dim": 640,
+        "feature_source": "embedding (hidden-state, layers='last', pool='mean')",
+        "max_context": null,
+        "n_excluded_single_class": 0,
+        "n_test_genomes": 9,
+        "n_test_genomes_scored": 9,
+        "n_train_genes": 136278,
+        "n_train_genomes": 37,
+        "n_windows_embedded": 164630,
+        "per_genome": [
+          {
+            "auprc": 0.45468331961667946,
+            "auroc": 0.8756589683899864,
+            "genome_name": "DEG1001",
+            "genus": "Bacillus",
+            "n_essential": 271,
+            "n_genes": 4237,
+            "scored": true
+          },
+          {
+            "auprc": 0.3786043152766873,
+            "auroc": 0.6909109083271334,
+            "genome_name": "DEG1003",
+            "genus": "Vibrio",
+            "n_essential": 536,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.8279393551549499,
+            "auroc": 0.609766285845569,
+            "genome_name": "DEG1006",
+            "genus": "Mycoplasma",
+            "n_essential": 377,
+            "n_genes": 504,
+            "scored": true
+          },
+          {
+            "auprc": 0.6600622773107072,
+            "auroc": 0.7241040274410077,
+            "genome_name": "DEG1014",
+            "genus": "Mycoplasma",
+            "n_essential": 296,
+            "n_genes": 753,
+            "scored": true
+          },
+          {
+            "auprc": 0.4516843341534504,
+            "auroc": 0.8055749074371238,
+            "genome_name": "DEG1029",
+            "genus": "Shewanella",
+            "n_essential": 403,
+            "n_genes": 4207,
+            "scored": true
+          },
+          {
+            "auprc": 0.482513719611095,
+            "auroc": 0.8207098788032566,
+            "genome_name": "DEG1041",
+            "genus": "Rhodopseudomonas",
+            "n_essential": 538,
+            "n_genes": 4904,
+            "scored": true
+          },
+          {
+            "auprc": 0.11124896358564232,
+            "auroc": 0.5372127158059916,
+            "genome_name": "DEG1047",
+            "genus": "Bacillus",
+            "n_essential": 488,
+            "n_genes": 5419,
+            "scored": true
+          },
+          {
+            "auprc": 0.488520611849785,
+            "auroc": 0.8192484307607687,
+            "genome_name": "DEG1067",
+            "genus": "Vibrio",
+            "n_essential": 327,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.6880786453709256,
+            "auroc": 0.6559989370654147,
+            "genome_name": "DEG1068",
+            "genus": "Mycoplasma",
+            "n_essential": 337,
+            "n_genes": 672,
+            "scored": true
+          }
+        ],
+        "probe": "sklearn.LogisticRegression(StandardScaler)+re-derivation",
+        "probe_C": 1.0,
+        "probe_seed": 1,
+        "scoring_method": "embedding",
+        "task_version": "1.0",
+        "threshold": 0.5
+      },
+      "metrics": {
+        "accuracy": 0.8784067085953878,
+        "f1": 0.20095011876484561,
+        "fn": 3150.0,
+        "fp": 214.0,
+        "macro_mean_auprc": 0.5048150602144358,
+        "macro_mean_auroc": 0.726576117764028,
+        "macro_median_auprc": 0.482513719611095,
+        "macro_median_auroc": 0.7241040274410077,
+        "n_test_genes": 27666.0,
+        "n_test_genomes_scored": 9.0,
+        "precision": 0.6640502354788069,
+        "recall": 0.11838790931989925,
+        "specificity": 0.9911177520441622,
+        "tn": 23879.0,
+        "tp": 423.0
+      },
+      "primary_metric": "macro_mean_auroc",
+      "status": "ok",
+      "task": "bacbench-essentiality"
+    },
+    {
+      "metadata": {
+        "aggregation": "macro mean (primary) + median across test genomes",
+        "best_layer": 5,
+        "best_layer_selection": {
+          "considered_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "excluded_layers": [],
+          "exclusion_rule": null
+        },
+        "depth_health": {
+          "cos": [
+            null,
+            0.05609571347468523,
+            0.0709915708689203,
+            0.26441085259005787,
+            0.7512186797549072,
+            0.8152062544080549
+          ],
+          "degenerate_layers": [],
+          "degenerate_rms_abs": 1e-12,
+          "degenerate_rms_rel": 0.0,
+          "delta": [
+            null,
+            0.9988304641703315,
+            1.4386117762518262,
+            1.0727372956392096,
+            0.6885606024254968,
+            0.6458512901873377
+          ],
+          "dtype": "bfloat16 (assumed)",
+          "frozen_layers": [],
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "max_rms": 3.447119111100555,
+          "n_sequences": 4096,
+          "notes": [
+            "pooled over 4096 of 163944 sequences (evenly spaced, deterministic) \u2014 these are corpus-level averages and the full stack is too large to promote to float64."
+          ],
+          "ratio_min": 0.6458512901873377,
+          "ratio_min_layer": 5,
+          "rel_std": [
+            0.24668732084071482,
+            0.05816230397799582,
+            0.10561477087973761,
+            0.14862879780667487,
+            0.22695555946373652,
+            0.29050680458223216
+          ],
+          "rms": [
+            0.022986704838313096,
+            0.8425818134403206,
+            0.760674147217316,
+            1.0362831048682446,
+            1.8598604236924932,
+            3.447119111100555
+          ],
+          "unit_roundoff": 0.00390625
+        },
+        "depth_health_measured": true,
+        "embedding_dim": 640,
+        "feature_source": "embedding hidden states (per-layer sweep, pool='mean')",
+        "max_context": null,
+        "n_excluded_single_class": 0,
+        "n_test_genomes": 9,
+        "n_test_genomes_scored": 9,
+        "n_train_genes": 136278,
+        "n_train_genomes": 37,
+        "n_windows_embedded": 164630,
+        "per_genome": [
+          {
+            "auprc": 0.45468331961667946,
+            "auroc": 0.8756589683899864,
+            "genome_name": "DEG1001",
+            "genus": "Bacillus",
+            "n_essential": 271,
+            "n_genes": 4237,
+            "scored": true
+          },
+          {
+            "auprc": 0.3786043152766873,
+            "auroc": 0.6909109083271334,
+            "genome_name": "DEG1003",
+            "genus": "Vibrio",
+            "n_essential": 536,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.8279393551549499,
+            "auroc": 0.609766285845569,
+            "genome_name": "DEG1006",
+            "genus": "Mycoplasma",
+            "n_essential": 377,
+            "n_genes": 504,
+            "scored": true
+          },
+          {
+            "auprc": 0.6600622773107072,
+            "auroc": 0.7241040274410077,
+            "genome_name": "DEG1014",
+            "genus": "Mycoplasma",
+            "n_essential": 296,
+            "n_genes": 753,
+            "scored": true
+          },
+          {
+            "auprc": 0.4516843341534504,
+            "auroc": 0.8055749074371238,
+            "genome_name": "DEG1029",
+            "genus": "Shewanella",
+            "n_essential": 403,
+            "n_genes": 4207,
+            "scored": true
+          },
+          {
+            "auprc": 0.482513719611095,
+            "auroc": 0.8207098788032566,
+            "genome_name": "DEG1041",
+            "genus": "Rhodopseudomonas",
+            "n_essential": 538,
+            "n_genes": 4904,
+            "scored": true
+          },
+          {
+            "auprc": 0.11124896358564232,
+            "auroc": 0.5372127158059916,
+            "genome_name": "DEG1047",
+            "genus": "Bacillus",
+            "n_essential": 488,
+            "n_genes": 5419,
+            "scored": true
+          },
+          {
+            "auprc": 0.488520611849785,
+            "auroc": 0.8192484307607687,
+            "genome_name": "DEG1067",
+            "genus": "Vibrio",
+            "n_essential": 327,
+            "n_genes": 3485,
+            "scored": true
+          },
+          {
+            "auprc": 0.6880786453709256,
+            "auroc": 0.6559989370654147,
+            "genome_name": "DEG1068",
+            "genus": "Mycoplasma",
+            "n_essential": 337,
+            "n_genes": 672,
+            "scored": true
+          }
+        ],
+        "per_layer": [
+          {
+            "layer": 0,
+            "macro_mean_auprc": 0.2421869026017166,
+            "macro_mean_auroc": 0.4832405463325737,
+            "macro_median_auroc": 0.4850083528175646,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 1,
+            "macro_mean_auprc": 0.38487236083887033,
+            "macro_mean_auroc": 0.6629944072103594,
+            "macro_median_auroc": 0.6669746880359572,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 2,
+            "macro_mean_auprc": 0.42881310112401777,
+            "macro_mean_auroc": 0.698078291015944,
+            "macro_median_auroc": 0.7177686439174404,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 3,
+            "macro_mean_auprc": 0.44532006423179127,
+            "macro_mean_auroc": 0.7080600783255269,
+            "macro_median_auroc": 0.7127269501448932,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 4,
+            "macro_mean_auprc": 0.49135271370036576,
+            "macro_mean_auroc": 0.7199814201206601,
+            "macro_median_auroc": 0.7196093796203205,
+            "n_test_genomes_scored": 9
+          },
+          {
+            "layer": 5,
+            "macro_mean_auprc": 0.5048150602144358,
+            "macro_mean_auroc": 0.726576117764028,
+            "macro_median_auroc": 0.7241040274410077,
+            "n_test_genomes_scored": 9
+          }
+        ],
+        "probe": "sklearn.LogisticRegression(StandardScaler)+re-derivation",
+        "probe_C": 1.0,
+        "probe_seed": 1,
+        "scoring_method": "embedding",
+        "swept_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "task_version": "1.0",
+        "threshold": 0.5
+      },
+      "metrics": {
+        "accuracy": 0.8784067085953878,
+        "best_layer": 5.0,
+        "f1": 0.20095011876484561,
+        "fn": 3150.0,
+        "fp": 214.0,
+        "layer_0_macro_mean_auprc": 0.2421869026017166,
+        "layer_0_macro_mean_auroc": 0.4832405463325737,
+        "layer_1_macro_mean_auprc": 0.38487236083887033,
+        "layer_1_macro_mean_auroc": 0.6629944072103594,
+        "layer_2_macro_mean_auprc": 0.42881310112401777,
+        "layer_2_macro_mean_auroc": 0.698078291015944,
+        "layer_3_macro_mean_auprc": 0.44532006423179127,
+        "layer_3_macro_mean_auroc": 0.7080600783255269,
+        "layer_4_macro_mean_auprc": 0.49135271370036576,
+        "layer_4_macro_mean_auroc": 0.7199814201206601,
+        "layer_5_macro_mean_auprc": 0.5048150602144358,
+        "layer_5_macro_mean_auroc": 0.726576117764028,
+        "macro_mean_auprc": 0.5048150602144358,
+        "macro_mean_auroc": 0.726576117764028,
+        "macro_median_auprc": 0.482513719611095,
+        "macro_median_auroc": 0.7241040274410077,
+        "n_test_genes": 27666.0,
+        "n_test_genomes_scored": 9.0,
+        "precision": 0.6640502354788069,
+        "recall": 0.11838790931989925,
+        "specificity": 0.9911177520441622,
+        "tn": 23879.0,
+        "tp": 423.0
+      },
+      "primary_metric": "macro_mean_auroc",
+      "status": "ok",
+      "task": "bacbench-essentiality-layer-sweep"
+    },
+    {
+      "metadata": {
+        "embedding_dim": 640,
+        "feature_source": "embedding (hidden-state, layer=5, pool='mean')",
+        "layer": 5,
+        "max_context": null,
+        "max_iter": 1000,
+        "n_classes_test": 128,
+        "n_classes_train": 128,
+        "n_test": 128,
+        "n_test_overflow": 1,
+        "n_train": 512,
+        "n_train_overflow": 4,
+        "n_windows_embedded": 645,
+        "overflow_strategy": "window",
+        "pool": "mean",
+        "primary_metric_note": "macro-F1 (f1_score average='macro'), DGEB EC metric",
+        "probe": "vendored DGEB logRegClassificationEvaluator (sklearn)",
+        "probe_seed": 42,
+        "scoring_method": "embedding",
+        "standard_scale": false,
+        "task_version": "1.0"
+      },
+      "metrics": {
+        "accuracy": 0.2265625,
+        "f1": 0.18151041666666667,
+        "n_classes": 128.0,
+        "n_test": 128.0,
+        "n_train": 512.0
+      },
+      "primary_metric": "f1",
+      "status": "ok",
+      "task": "dgeb-ec-classification-dna"
+    },
+    {
+      "metadata": {
+        "best_layer": 4,
+        "best_layer_selection": {
+          "considered_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "excluded_layers": [],
+          "exclusion_rule": null
+        },
+        "depth_health": {
+          "cos": [
+            null,
+            0.056541793408474365,
+            0.07118905173273049,
+            0.2572659922238352,
+            0.7500449799469432,
+            0.8129822650017475
+          ],
+          "degenerate_layers": [],
+          "degenerate_rms_abs": 1e-12,
+          "degenerate_rms_rel": 0.0,
+          "delta": [
+            null,
+            0.9988197077367047,
+            1.4330722787885566,
+            1.0795896688561628,
+            0.6949750029795334,
+            0.6570836871577428
+          ],
+          "dtype": "bfloat16 (assumed)",
+          "frozen_layers": [],
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "max_rms": 3.752929421956478,
+          "n_sequences": 512,
+          "notes": [],
+          "ratio_min": 0.6570836871577428,
+          "ratio_min_layer": 5,
+          "rel_std": [
+            0.21197622311402248,
+            0.052335538001964305,
+            0.09304384585292956,
+            0.13328070490652294,
+            0.1938586043473007,
+            0.24234315378160518
+          ],
+          "rms": [
+            0.023044912876441618,
+            0.842154477163242,
+            0.7654653982963701,
+            1.0362567296029754,
+            1.927637233903872,
+            3.752929421956478
+          ],
+          "unit_roundoff": 0.00390625
+        },
+        "depth_health_measured": true,
+        "embedding_dim": 640,
+        "feature_source": "embedding hidden states (per-layer sweep, pool='mean')",
+        "max_context": null,
+        "max_iter": 1000,
+        "n_classes_test": 128,
+        "n_classes_train": 128,
+        "n_test": 128,
+        "n_test_overflow": 1,
+        "n_train": 512,
+        "n_train_overflow": 4,
+        "n_windows_embedded": 645,
+        "overflow_strategy": "window",
+        "per_layer": [
+          {
+            "accuracy": 0.0078125,
+            "f1": 0.00021701388888888888,
+            "layer": 0
+          },
+          {
+            "accuracy": 0.046875,
+            "f1": 0.031684027777777776,
+            "layer": 1
+          },
+          {
+            "accuracy": 0.078125,
+            "f1": 0.04954117063492063,
+            "layer": 2
+          },
+          {
+            "accuracy": 0.140625,
+            "f1": 0.1015625,
+            "layer": 3
+          },
+          {
+            "accuracy": 0.234375,
+            "f1": 0.19322916666666667,
+            "layer": 4
+          },
+          {
+            "accuracy": 0.2265625,
+            "f1": 0.18151041666666667,
+            "layer": 5
+          }
+        ],
+        "pool": "mean",
+        "primary_metric_note": "macro-F1 (f1_score average='macro'), DGEB EC metric",
+        "probe": "vendored DGEB logRegClassificationEvaluator (sklearn)",
+        "probe_seed": 42,
+        "scoring_method": "embedding",
+        "standard_scale": false,
+        "swept_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "task_version": "1.0"
+      },
+      "metrics": {
+        "accuracy": 0.234375,
+        "best_layer": 4.0,
+        "f1": 0.19322916666666667,
+        "layer_0_accuracy": 0.0078125,
+        "layer_0_f1": 0.00021701388888888888,
+        "layer_1_accuracy": 0.046875,
+        "layer_1_f1": 0.031684027777777776,
+        "layer_2_accuracy": 0.078125,
+        "layer_2_f1": 0.04954117063492063,
+        "layer_3_accuracy": 0.140625,
+        "layer_3_f1": 0.1015625,
+        "layer_4_accuracy": 0.234375,
+        "layer_4_f1": 0.19322916666666667,
+        "layer_5_accuracy": 0.2265625,
+        "layer_5_f1": 0.18151041666666667,
+        "n_classes": 128.0,
+        "n_test": 128.0,
+        "n_train": 512.0
+      },
+      "primary_metric": "f1",
+      "status": "ok",
+      "task": "dgeb-ec-classification-dna-layer-sweep"
+    },
+    {
+      "metadata": {
+        "blat_dms_id": "BLAT_ECOLX_Firnberg_2014",
+        "max_context": null,
+        "n_missing": 0,
+        "n_over_context": 0,
+        "n_scored": 30658,
+        "n_unscoreable": 0,
+        "per_assay": [
+          {
+            "auc": 0.5157811163421167,
+            "dms_id": "BLAT_ECOLX_Firnberg_2014",
+            "mcc": 0.008155854388123952,
+            "n_missing": 0,
+            "n_variants": 4783,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.000483975961711347
+          },
+          {
+            "auc": 0.504692742001473,
+            "dms_id": "BLAT_ECOLX_Jacquier_2013",
+            "mcc": 0.04953471850478686,
+            "n_missing": 0,
+            "n_variants": 989,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.014949589567919114
+          },
+          {
+            "auc": 0.5111409089199597,
+            "dms_id": "CCDB_ECOLI_Adkar_2012",
+            "mcc": 0.008504397612911909,
+            "n_missing": 0,
+            "n_variants": 1176,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.016313792974609467
+          },
+          {
+            "auc": 0.6621244423895268,
+            "dms_id": "IF1_ECOLI_Kelsic_2016",
+            "mcc": 0.2304311902254416,
+            "n_missing": 0,
+            "n_variants": 1367,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.3756509342110075
+          },
+          {
+            "auc": 0.5060883209983771,
+            "dms_id": "RNC_ECOLI_Weeks_2023",
+            "mcc": 0.010053831227359856,
+            "n_missing": 0,
+            "n_variants": 4277,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.002044686697377256
+          },
+          {
+            "auc": 0.7024459191583988,
+            "dms_id": "F7YBW8_MESOW_Ding_2023",
+            "mcc": 0.27846503408230244,
+            "n_missing": 0,
+            "n_variants": 7922,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.37900579777297416
+          },
+          {
+            "auc": 0.7303090933043507,
+            "dms_id": "Q837P4_ENTFA_Meier_2023",
+            "mcc": 0.29411619405197115,
+            "n_missing": 0,
+            "n_variants": 697,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.45372524261162167
+          },
+          {
+            "auc": 0.5229682920728688,
+            "dms_id": "MLAC_ECOLI_MacRae_2023",
+            "mcc": 0.052158787766454114,
+            "n_missing": 0,
+            "n_variants": 4007,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.029021589873290725
+          },
+          {
+            "auc": 0.5314416241588886,
+            "dms_id": "ESTA_BACSU_Nutschel_2020",
+            "mcc": 0.06629845496934224,
+            "n_missing": 0,
+            "n_variants": 2172,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.09069255234286096
+          },
+          {
+            "auc": 0.5095755011763552,
+            "dms_id": "PSAE_PICP2_Tsuboyama_2023_1PSE",
+            "mcc": 0.009900990099009901,
+            "n_missing": 0,
+            "n_variants": 1616,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.02192569395816086
+          },
+          {
+            "auc": 0.5469670631826417,
+            "dms_id": "BCHB_CHLTE_Tsuboyama_2023_2KRU",
+            "mcc": 0.08232445520581114,
+            "n_missing": 0,
+            "n_variants": 1652,
+            "rna_type": "mRNA-coding",
+            "spearman": 0.07761812517537127
+          }
+        ],
+        "reduction": "mean",
+        "scoring_method": "sequence_loglikelihood",
+        "task_version": "1.0"
+      },
+      "metrics": {
+        "BCHB_CHLTE_Tsuboyama_2023_2KRU_spearman": 0.07761812517537127,
+        "BLAT_ECOLX_Firnberg_2014_spearman": 0.000483975961711347,
+        "BLAT_ECOLX_Jacquier_2013_spearman": 0.014949589567919114,
+        "CCDB_ECOLI_Adkar_2012_spearman": 0.016313792974609467,
+        "ESTA_BACSU_Nutschel_2020_spearman": 0.09069255234286096,
+        "F7YBW8_MESOW_Ding_2023_spearman": 0.37900579777297416,
+        "IF1_ECOLI_Kelsic_2016_spearman": 0.3756509342110075,
+        "MLAC_ECOLI_MacRae_2023_spearman": 0.029021589873290725,
+        "PSAE_PICP2_Tsuboyama_2023_1PSE_spearman": 0.02192569395816086,
+        "Q837P4_ENTFA_Meier_2023_spearman": 0.45372524261162167,
+        "RNC_ECOLI_Weeks_2023_spearman": 0.002044686697377256,
+        "blat_ecolx_spearman": 0.000483975961711347,
+        "macro_auc": 0.567594093064087,
+        "macro_mcc": 0.09908580983031956,
+        "macro_spearman": 0.13285745283153674,
+        "n_assays": 11.0,
+        "n_missing_predictions": 0.0
+      },
+      "primary_metric": "macro_spearman",
+      "status": "ok",
+      "task": "rnagym-dms"
+    }
+  ]
+}

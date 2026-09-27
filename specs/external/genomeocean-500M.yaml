@@ -1,0 +1,26 @@
+# GenomeOcean-500M: the 500M sibling of specs/external/genomeocean-100M.yaml (same serving
+# path; only the checkpoint and pinned revision differ).
+adapter: genomeocean
+adapter_version: "0.2.0"
+display_name: "GenomeOcean-500M"
+model:
+  checkpoint: "pGenomeOcean/GenomeOcean-500M"
+  n_layers: 14                  # config.json `num_hidden_layers`; describes the weights, not hashed
+  tokenizer: null
+  revision: "473f8de940f8549539b9bcb3abe6149202b85b4e"   # pinned commit
+  dtype: bfloat16
+  attn_implementation: sdpa
+  trust_remote_code: false
+  max_context: 5000          # nucleotides (model window = 1024 tokens; ~5 nt/token)
+  max_tokens: 1024
+  pool_include_special: true
+  batch_size: 8
+weights_digest:
+  strategy: hf_revision
+  value: "473f8de940f8549539b9bcb3abe6149202b85b4e"
+runner:
+  backend: local
+  python_exe: "${GLMBENCH_PYTHON:-python}"
+  gpus: "0"
+  scratch_dir: null
+  extra: {}

@@ -1,0 +1,6 @@
+# The 11 vendored RNAGym prokaryotic DMS CSVs are ~18 MB and git-LFS is not
+# assumed on the build box, so we use the "gitignored cache + committed sha256
+# manifest" route: prok_coding_manifest.yaml pins each file by sha256 so drift
+# still fails loudly (glmbench.tasks.rnagym_data.verify_manifest).
+# Repopulate with: python3 scripts/fetch_rnagym_prok.py
+processed_DMS_files/*.csv

@@ -1,0 +1,31 @@
+DGEB `evaluators.py` (classification evaluator): vendored metric authority
+==========================================================================
+
+Source  : TattaBio/DGEB
+URL     : https://github.com/TattaBio/DGEB/blob/e284167a0ba903d0563b4573ec14354c4af45ad6/dgeb/evaluators.py
+Commit  : e284167a0ba903d0563b4573ec14354c4af45ad6
+License : Apache-2.0 (see LICENSE in this directory)
+Cite    : West-Roberts, Kravitz, Jha, Cornman, Hwang. "Diverse Genomic Embedding
+          Benchmark for Functional Evaluation across the Tree of Life." bioRxiv 2024.
+          doi:10.1101/2024.07.10.602933
+
+What this file is. `evaluators.py` holds the torch-free subset of upstream's
+`dgeb/evaluators.py`: two classes, each copied character for character from upstream.
+  - `logRegClassificationEvaluator`: the sklearn `LogisticRegression` probe and the
+    `f1_score(average="macro")` / `accuracy_score` reduction that DGEB's EC classification
+    task is defined by. gLMBench calls it via `glmbench.tasks.dgeb_ec_metrics`.
+  - `EDSEvaluator`: the Evolutionary Distance Similarity reduction of DGEB's phylogeny tasks.
+    It is part of the vendored extract but no task in this repository calls it.
+
+Modifications (Apache-2.0 section 4(b)). This copy is modified from upstream in two ways:
+  1. Upstream's `Evaluator.__init__` also runs `torch.manual_seed(self.seed)` and
+     `torch.cuda.manual_seed_all(self.seed)`. Those two lines are removed, so the core
+     package stays torch-free. This cannot change a score: the probe's randomness is fixed
+     by `LogisticRegression(random_state=self.seed)`, which does not draw from the torch
+     RNG. The `random.seed` / `np.random.seed` lines are kept.
+  2. Only the two evaluator classes (and the imports they need) are kept. Upstream's other
+     evaluators import `torch` and `pytrec_eval` at module scope.
+
+Rules. Copy, never edit. The sha256 in `SHA256SUMS` is checked by a unit test, so an edit
+to the copy fails loudly. Re-vendoring from a newer upstream commit is the only sanctioned
+change; it bumps the task version.

@@ -1,0 +1,60 @@
+# Evo2-7B (Arc Institute `evo2` package), read on its residual stream.
+#
+# Each tap `blocks.N` is the raw output of block N after the residual add, the same readout
+# as every other decoder in the benchmark (the adapter declares `readout: block_output`).
+# Two nearby modules are NOT this: `blocks.N.mlp.l3` is a branch output before the residual
+# add, and `blocks.N.pre_norm` is the normalised stream entering block N. The closing `norm`
+# is the post-final-norm state and is deliberately absent; a row reports one readout.
+#
+# Layer ladder: every other block plus the last, 17 of 32. A layer id reported by the
+# benchmark is a position in this list (Evo2 has no integer layer space of its own), and
+# `layers='last'` is the last entry.
+#
+# Run in the `evo2` environment (docs/INSTALL.md), on ONE GPU: the package shards the
+# model across every visible card, so set CUDA_VISIBLE_DEVICES.
+#   CUDA_VISIBLE_DEVICES=0 glmbench run --model specs/external/evo2-arc-7b-resid.yaml \
+#       --benchmark loam_paper --results results/
+adapter: evo2-arc
+adapter_version: "0.1.0"
+display_name: "Evo2-7B (residual stream)"   # label only; identity is the model hash
+model:
+  model_name: "evo2_7b_base"
+  layer_names:
+    - "blocks.0"
+    - "blocks.2"
+    - "blocks.4"
+    - "blocks.6"
+    - "blocks.8"
+    - "blocks.10"
+    - "blocks.12"
+    - "blocks.14"
+    - "blocks.16"
+    - "blocks.18"
+    - "blocks.20"
+    - "blocks.22"
+    - "blocks.24"
+    - "blocks.26"
+    - "blocks.28"
+    - "blocks.30"
+    - "blocks.31"
+  dtype: bfloat16
+  # The package's `prepend_bos=True` prepends tokenizer.eod_id; for Evo2's character-level
+  # tokenizer eod == eos == 0, so 'bos' and 'eos' select the same token.
+  score_prefix: bos
+  max_context: 8192          # the _base checkpoint's trained window
+  n_layers: 32               # describes the weights; the runner reports the measured shape
+  hidden_size: 4096
+weights_digest:
+  strategy: hf_revision
+  value: "074097e9dc788e8bfe045d6495b9f6153a7c6bfc"
+runner:
+  backend: local             # in-process, in the `evo2` environment
+  python_exe: "${GLMBENCH_EVO2_PYTHON:-python}"
+  gpus: "0"                  # "0"/"auto" -> cuda; Evo2 has no CPU path
+  scratch_dir: null
+  extra:
+    # Evo2 takes no attention mask, so a batch pads to its longest member. The runner
+    # buckets by length, and token_budget (batch x padded length) bounds the real tensor.
+    batch_size: 8
+    token_budget: 8192
+    hf_home: null            # optional: override the Hugging Face cache dir
