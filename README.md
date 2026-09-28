@@ -3,8 +3,8 @@
 **A benchmark harness for genomic language models, and the code to reproduce the benchmark
 results of the LOAM paper.**
 
-gLMBench scores DNA language models on three bacterial genomics tasks taken from published
-benchmarks by other authors (full [references](#references) below):
+In its current form, gLMBench scores DNA language models on three bacterial genomics tasks taken from published
+benchmarks (full [references](#references) below):
 
 - **Gene essentiality** ([BacBench](https://github.com/macwiatrak/BacBench)): can a linear
   probe on the model's embeddings tell essential genes from non-essential ones, in genomes of
