@@ -1,17 +1,19 @@
 # gLMBench
 
-**A benchmark for genomic language models, and the code to reproduce the benchmark results
-of the LOAM paper.**
+**A benchmark harness for genomic language models, and the code to reproduce the benchmark
+results of the LOAM paper.**
 
 gLMBench scores DNA language models on three bacterial genomics tasks taken from published
-benchmarks:
+benchmarks by other authors (full [references](#references) below):
 
-- **Gene essentiality** (BacBench): can a linear probe on the model's embeddings tell essential
-  genes from non-essential ones, in genomes of genera it has not seen?
-- **Enzyme class** (DGEB): can a linear probe predict a gene's Enzyme Commission class from its
-  DNA?
-- **Variant effects** (RNAGym): without any training, does the model's likelihood rank
-  single-nucleotide variants by their measured fitness?
+- **Gene essentiality** ([BacBench](https://github.com/macwiatrak/BacBench)): can a linear
+  probe on the model's embeddings tell essential genes from non-essential ones, in genomes of
+  genera it has not seen?
+- **Enzyme class** ([DGEB](https://github.com/TattaBio/DGEB)): can a linear probe predict a
+  gene's Enzyme Commission class from its DNA?
+- **Variant effects** ([RNAGym](https://github.com/MarksLab-DasLab/RNAGym)): without any
+  training, does the model's likelihood rank single-nucleotide variants by their measured
+  fitness?
 
 The paper evaluated 13 models: the four released LOAM models
 ([`Soilytix/LOAM-25M`, `-100M`, `-340M`, `-624M`](https://huggingface.co/Soilytix)) and nine
@@ -182,7 +184,24 @@ The code is released under the Apache License 2.0 ([LICENSE](LICENSE)). Vendored
 keeps its own licence ([NOTICE](NOTICE)).
 
 The tasks are the work of their authors; gLMBench only serves them. If you use a task, please
-cite its source: BacBench (Wiatrak et al.), DGEB (West-Roberts et al., 2024) and RNAGym (Notin et
-al., 2025), all listed in [CITATION.cff](CITATION.cff). The task data is downloaded from its
-upstream sources at pinned revisions and is not redistributed here. Model weights are not part
-of this repository and are subject to their own licences.
+cite its source, listed under [References](#references) below. The task data is downloaded from
+its upstream sources at pinned revisions and is not redistributed here. Model weights are not
+part of this repository and are subject to their own licences.
+
+## References
+
+The three benchmarks gLMBench serves:
+
+1. **BacBench.** Wiatrak, M. *et al.* BacBench: multi-scale and multi-task benchmark for
+   evaluating ML models for bacterial genomics across the bacterial tree of life. Code:
+   [macwiatrak/BacBench](https://github.com/macwiatrak/BacBench). No paper has been published
+   yet; please cite the repository.
+2. **DGEB.** West-Roberts, J., Kravitz, J., Jha, N., Cornman, A. & Hwang, Y. Diverse Genomic
+   Embedding Benchmark for functional evaluation across the tree of life. *bioRxiv* (2024).
+   [doi:10.1101/2024.07.10.602933](https://doi.org/10.1101/2024.07.10.602933). Code:
+   [TattaBio/DGEB](https://github.com/TattaBio/DGEB).
+3. **RNAGym.** Arora, R., Angelo, M., Choe, C. A., Shearer, C., Kollasch, A., Qu, F., Weitzman,
+   R., Gazizov, A., Gurev, S., Xie, E., Marks, D. S. & Notin, P. RNAGym: Large-scale Benchmarks
+   for RNA Fitness and Structure Prediction. *bioRxiv* (2025).
+   [doi:10.1101/2025.06.16.660049](https://doi.org/10.1101/2025.06.16.660049). Code:
+   [MarksLab-DasLab/RNAGym](https://github.com/MarksLab-DasLab/RNAGym).
