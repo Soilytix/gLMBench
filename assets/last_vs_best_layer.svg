@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" role="img" aria-labelledby="t d">
+<title id="t">Last-layer vs best-layer probe scores</title>
+<desc id="d">Dot plot of the 13 models, LOAM first then the comparators by size. For gene essentiality AUROC and enzyme-class macro-F1 each model shows its last-layer score (filled) and its best-tap score (ring); the dashed lines are the k-mer floors. On EC most comparators sit near the floor at their last layer and gain mostly at an intermediate tap; LOAM's last-layer EC scores are 0.18 to 0.30.</desc>
+<style>
+  text { font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #29332E; font-size: 12px; }
+  .num { font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 11px; }
+  .muted { fill: #5E6A64; }
+  .title { font-size: 14px; font-weight: 600; }
+  .axis { stroke: #29332E; stroke-width: 1; }
+  .grid { stroke: #29332E; stroke-opacity: 0.12; stroke-width: 1; }
+  .floor { stroke: #5E6A64; stroke-width: 1.2; stroke-dasharray: 5 4; }
+  .link { stroke: #5E6A64; stroke-opacity: 0.5; stroke-width: 1.5; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #E6E9E7; } .muted { fill: #A3ADA8; }
+    .axis { stroke: #E6E9E7; } .grid { stroke: #E6E9E7; }
+    .floor, .link { stroke: #A3ADA8; }
+  }
+</style>
+<text class="title" x="16" y="22">Last layer vs best layer, every model</text>
+<text class="muted" x="16" y="40">filled = last layer · ring = best tap (chosen on the test split, an upper bound)</text>
+<text x="180" y="88" text-anchor="end">LOAM-25M</text>
+<text x="180" y="110" text-anchor="end">LOAM-100M</text>
+<text x="180" y="132" text-anchor="end">LOAM-340M</text>
+<text x="180" y="154" text-anchor="end">LOAM-624M</text>
+<text x="180" y="176" text-anchor="end">ProkBERT-mini</text>
+<text x="180" y="198" text-anchor="end">ProkBERT-mini-c</text>
+<text x="180" y="220" text-anchor="end">NTv3-100M</text>
+<text x="180" y="242" text-anchor="end">GenomeOcean-100M</text>
+<text x="180" y="264" text-anchor="end">gLM2-150M</text>
+<text x="180" y="286" text-anchor="end">GenomeOcean-500M</text>
+<text x="180" y="308" text-anchor="end">gLM2-650M</text>
+<text x="180" y="330" text-anchor="end">Evo 1.5 (8k, 7B)</text>
+<text x="180" y="352" text-anchor="end">Evo2-7B (residual stream)</text>
+<text x="190" y="70" font-weight="600">Gene essentiality (AUROC)</text>
+<line class="grid" x1="190.0" x2="190.0" y1="76" y2="380"/>
+<text class="num muted" x="190.0" y="396" text-anchor="middle">0.50</text>
+<line class="grid" x1="231.7" x2="231.7" y1="76" y2="380"/>
+<text class="num muted" x="231.7" y="396" text-anchor="middle">0.55</text>
+<line class="grid" x1="273.3" x2="273.3" y1="76" y2="380"/>
+<text class="num muted" x="273.3" y="396" text-anchor="middle">0.60</text>
+<line class="grid" x1="315.0" x2="315.0" y1="76" y2="380"/>
+<text class="num muted" x="315.0" y="396" text-anchor="middle">0.65</text>
+<line class="grid" x1="356.7" x2="356.7" y1="76" y2="380"/>
+<text class="num muted" x="356.7" y="396" text-anchor="middle">0.70</text>
+<line class="grid" x1="398.3" x2="398.3" y1="76" y2="380"/>
+<text class="num muted" x="398.3" y="396" text-anchor="middle">0.75</text>
+<line class="grid" x1="440.0" x2="440.0" y1="76" y2="380"/>
+<text class="num muted" x="440.0" y="396" text-anchor="middle">0.80</text>
+<line class="floor" x1="317.6" x2="317.6" y1="76" y2="380"/>
+<text class="muted" x="321.6" y="412">k-mer floor 0.6531</text>
+<line class="link" x1="378.8" x2="378.8" y1="84" y2="84"/>
+<circle cx="378.8" cy="84.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="378.8" cy="84.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="404.5" x2="404.5" y1="106" y2="106"/>
+<circle cx="404.5" cy="106.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="404.5" cy="106.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="408.6" x2="416.8" y1="128" y2="128"/>
+<circle cx="416.8" cy="128.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="408.6" cy="128.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="415.3" x2="415.7" y1="150" y2="150"/>
+<circle cx="415.7" cy="150.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="415.3" cy="150.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="372.1" x2="377.5" y1="172" y2="172"/>
+<circle cx="377.5" cy="172.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="372.1" cy="172.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="237.1" x2="253.2" y1="194" y2="194"/>
+<circle cx="253.2" cy="194.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="237.1" cy="194.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="339.1" x2="361.1" y1="216" y2="216"/>
+<circle cx="361.1" cy="216.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="339.1" cy="216.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="392.5" x2="407.6" y1="238" y2="238"/>
+<circle cx="407.6" cy="238.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="392.5" cy="238.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="339.9" x2="341.4" y1="260" y2="260"/>
+<circle cx="341.4" cy="260.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="339.9" cy="260.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="393.4" x2="405.2" y1="282" y2="282"/>
+<circle cx="405.2" cy="282.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="393.4" cy="282.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="352.7" x2="352.7" y1="304" y2="304"/>
+<circle cx="352.7" cy="304.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="352.7" cy="304.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="359.0" x2="421.6" y1="326" y2="326"/>
+<circle cx="421.6" cy="326.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="359.0" cy="326.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="356.0" x2="430.0" y1="348" y2="348"/>
+<circle cx="430.0" cy="348.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="356.0" cy="348.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="480" y="70" font-weight="600">Enzyme class (macro-F1)</text>
+<line class="grid" x1="480.0" x2="480.0" y1="76" y2="380"/>
+<text class="num muted" x="480.0" y="396" text-anchor="middle">0.00</text>
+<line class="grid" x1="542.5" x2="542.5" y1="76" y2="380"/>
+<text class="num muted" x="542.5" y="396" text-anchor="middle">0.10</text>
+<line class="grid" x1="605.0" x2="605.0" y1="76" y2="380"/>
+<text class="num muted" x="605.0" y="396" text-anchor="middle">0.20</text>
+<line class="grid" x1="667.5" x2="667.5" y1="76" y2="380"/>
+<text class="num muted" x="667.5" y="396" text-anchor="middle">0.30</text>
+<line class="grid" x1="730.0" x2="730.0" y1="76" y2="380"/>
+<text class="num muted" x="730.0" y="396" text-anchor="middle">0.40</text>
+<line class="floor" x1="491.9" x2="491.9" y1="76" y2="380"/>
+<text class="muted" x="495.9" y="412">k-mer floor 0.0191</text>
+<line class="link" x1="593.4" x2="600.8" y1="84" y2="84"/>
+<circle cx="600.8" cy="84.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="593.4" cy="84.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="668.0" x2="668.0" y1="106" y2="106"/>
+<circle cx="668.0" cy="106.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="668.0" cy="106.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="653.5" x2="682.1" y1="128" y2="128"/>
+<circle cx="682.1" cy="128.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="653.5" cy="128.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="665.9" x2="726.2" y1="150" y2="150"/>
+<circle cx="726.2" cy="150.0" r="5" fill="none" stroke="#384C10" stroke-width="1.8"/>
+<circle cx="665.9" cy="150.0" r="5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<line class="link" x1="534.0" x2="534.0" y1="172" y2="172"/>
+<circle cx="534.0" cy="172.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="534.0" cy="172.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="483.5" x2="483.5" y1="194" y2="194"/>
+<circle cx="483.5" cy="194.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="483.5" cy="194.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="509.1" x2="551.5" y1="216" y2="216"/>
+<circle cx="551.5" cy="216.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="509.1" cy="216.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="530.0" x2="580.6" y1="238" y2="238"/>
+<circle cx="580.6" cy="238.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="530.0" cy="238.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="520.2" x2="520.2" y1="260" y2="260"/>
+<circle cx="520.2" cy="260.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="520.2" cy="260.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="536.5" x2="695.5" y1="282" y2="282"/>
+<circle cx="695.5" cy="282.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="536.5" cy="282.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="517.2" x2="526.7" y1="304" y2="304"/>
+<circle cx="526.7" cy="304.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="517.2" cy="304.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="494.6" x2="687.4" y1="326" y2="326"/>
+<circle cx="687.4" cy="326.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="494.6" cy="326.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<line class="link" x1="512.1" x2="712.6" y1="348" y2="348"/>
+<circle cx="712.6" cy="348.0" r="5" fill="none" stroke="#CA8407" stroke-width="1.8"/>
+<circle cx="512.1" cy="348.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+</svg>

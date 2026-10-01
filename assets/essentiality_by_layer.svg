@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">LOAM essentiality AUROC by layer</title>
+<desc id="d">Line chart of macro mean AUROC on BacBench gene essentiality at every probed layer of the four LOAM models, against relative depth. All four start near 0.48 at the embedding layer, rise steeply in the first layers and reach 0.73 to 0.77 at depth; the dashed line is the k-mer floor, 0.6531.</desc>
+<style>
+  text { font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #29332E; font-size: 12px; }
+  .num { font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 11px; }
+  .muted { fill: #5E6A64; }
+  .title { font-size: 14px; font-weight: 600; }
+  .axis { stroke: #29332E; stroke-width: 1; }
+  .grid { stroke: #29332E; stroke-opacity: 0.12; stroke-width: 1; }
+  .floor { stroke: #5E6A64; stroke-width: 1.2; stroke-dasharray: 5 4; }
+  .link { stroke: #5E6A64; stroke-opacity: 0.5; stroke-width: 1.5; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #E6E9E7; } .muted { fill: #A3ADA8; }
+    .axis { stroke: #E6E9E7; } .grid { stroke: #E6E9E7; }
+    .floor, .link { stroke: #A3ADA8; }
+  }
+</style>
+<text class="title" x="60" y="22">Gene essentiality: LOAM AUROC at every layer</text>
+<line class="grid" x1="60" x2="520" y1="271.4" y2="271.4"/>
+<text class="num muted" x="52" y="275.4" text-anchor="end">0.50</text>
+<line class="grid" x1="60" x2="520" y1="194.3" y2="194.3"/>
+<text class="num muted" x="52" y="198.3" text-anchor="end">0.60</text>
+<line class="grid" x1="60" x2="520" y1="117.1" y2="117.1"/>
+<text class="num muted" x="52" y="121.1" text-anchor="end">0.70</text>
+<line class="grid" x1="60" x2="520" y1="40.0" y2="40.0"/>
+<text class="num muted" x="52" y="44.0" text-anchor="end">0.80</text>
+<text class="num muted" x="60.0" y="328" text-anchor="middle">0</text>
+<text class="num muted" x="175.0" y="328" text-anchor="middle">0.25</text>
+<text class="num muted" x="290.0" y="328" text-anchor="middle">0.5</text>
+<text class="num muted" x="405.0" y="328" text-anchor="middle">0.75</text>
+<text class="num muted" x="520.0" y="328" text-anchor="middle">1</text>
+<line class="axis" x1="60" x2="520" y1="310" y2="310"/>
+<text x="290.0" y="348" text-anchor="middle">relative depth (tap ÷ last tap)</text>
+<text x="16" y="175.0" text-anchor="middle" transform="rotate(-90 16 175.0)">macro mean AUROC</text>
+<line class="floor" x1="60" x2="520" y1="153.3" y2="153.3"/>
+<text class="muted" x="526" y="157.3">k-mer floor 0.6531</text>
+<polyline fill="none" stroke="#384C10" stroke-opacity="0.4" stroke-width="1.2" points="60.0,284.4 152.0,145.7 244.0,118.6 336.0,110.9 428.0,101.7 520.0,96.6"/>
+<circle cx="60.0" cy="284.4" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="152.0" cy="145.7" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="244.0" cy="118.6" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="336.0" cy="110.9" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="428.0" cy="101.7" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="520.0" cy="96.6" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<polyline fill="none" stroke="#384C10" stroke-opacity="0.6" stroke-width="1.8" points="60.0,287.0 117.5,147.3 175.0,148.1 232.5,124.4 290.0,108.6 347.5,103.7 405.0,82.6 462.5,74.2 520.0,72.9"/>
+<circle cx="60.0" cy="287.0" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="117.5" cy="147.3" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="175.0" cy="148.1" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="232.5" cy="124.4" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="290.0" cy="108.6" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="347.5" cy="103.7" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="405.0" cy="82.6" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="462.5" cy="74.2" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="520.0" cy="72.9" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<polyline fill="none" stroke="#384C10" stroke-opacity="0.8" stroke-width="2.4" points="60.0,287.8 98.3,158.8 136.7,146.6 175.0,132.4 213.3,115.7 251.7,106.4 290.0,95.0 328.3,79.8 366.7,74.1 405.0,67.0 443.3,61.5 481.7,67.6 520.0,69.1"/>
+<circle cx="60.0" cy="287.8" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="98.3" cy="158.8" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="136.7" cy="146.6" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="175.0" cy="132.4" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="213.3" cy="115.7" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="251.7" cy="106.4" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="290.0" cy="95.0" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="328.3" cy="79.8" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="366.7" cy="74.1" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="405.0" cy="67.0" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="443.3" cy="61.5" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="481.7" cy="67.6" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="520.0" cy="69.1" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<polyline fill="none" stroke="#384C10" stroke-opacity="1.0" stroke-width="3.0" points="60.0,285.3 88.8,148.7 117.5,143.2 146.2,134.2 175.0,130.9 203.8,118.6 232.5,112.1 261.2,95.2 290.0,81.4 318.8,75.8 347.5,77.9 376.2,74.0 405.0,67.0 433.8,64.8 462.5,65.1 491.2,62.5 520.0,62.9"/>
+<circle cx="60.0" cy="285.3" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="88.8" cy="148.7" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="117.5" cy="143.2" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="146.2" cy="134.2" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="175.0" cy="130.9" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="203.8" cy="118.6" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="232.5" cy="112.1" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="261.2" cy="95.2" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="290.0" cy="81.4" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="318.8" cy="75.8" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="347.5" cy="77.9" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="376.2" cy="74.0" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="405.0" cy="67.0" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="433.8" cy="64.8" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="462.5" cy="65.1" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="491.2" cy="62.5" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<circle cx="520.0" cy="62.9" r="2.5" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<text x="526" y="66.9">624M</text>
+<text x="526" y="79.9">340M</text>
+<text x="526" y="92.9">100M</text>
+<text x="526" y="105.9">25M</text>
+</svg>
