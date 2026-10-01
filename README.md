@@ -1,7 +1,41 @@
-# gLMBench
+<h3>gLMBench</h3>
 
-**A benchmark harness for genomic language models, and the code to reproduce the benchmark
-results of the LOAM paper.**
+<p>
+  <sub>A SOILYTIX BENCHMARK · GENOMIC LANGUAGE MODELS ON BACTERIAL GENOMES</sub>
+  <br>
+  <strong>A benchmark harness for genomic language models, and the code to reproduce the benchmark
+  results of the LOAM paper.</strong>
+  <br>
+  <br>
+  <a href="https://github.com/Soilytix/gLMBench/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/Soilytix/gLMBench/ci.yml?style=flat-square&amp;label=tests&amp;labelColor=16211B&amp;color=1AB172" alt="Tests">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/licence-Apache--2.0-1AB172?style=flat-square&amp;labelColor=16211B" alt="Licence Apache 2.0">
+  </a>
+  <a href="docs/INSTALL.md">
+    <img src="https://img.shields.io/badge/python-3.11-1AB172?style=flat-square&amp;labelColor=16211B" alt="Python 3.11">
+  </a>
+  <a href="https://huggingface.co/Soilytix">
+    <img src="https://img.shields.io/badge/models-Hugging%20Face-1AB172?style=flat-square&amp;labelColor=16211B" alt="LOAM models on Hugging Face">
+  </a>
+</p>
+
+- [What it measures](#what-it-measures)
+- [Quickstart](#quickstart)
+- [The paper's results](#the-papers-results)
+- [How closely you will reproduce them](#how-closely-you-will-reproduce-them)
+- [How it works](#how-it-works)
+- [Requirements](#requirements)
+- [Documentation](#documentation)
+- [Licence and citation](#licence-and-citation)
+
+> **Status.** The numbers in [`paper/`](paper/README.md) are frozen: they are the records the
+> LOAM manuscript reports, and nothing a benchmark run writes changes them. The manuscript itself
+> is not yet public; its citation will be added to [CITATION.cff](CITATION.cff) when the preprint
+> is available.
+
+## What it measures
 
 In its current form, gLMBench scores DNA language models on three bacterial genomics tasks taken from published
 benchmarks (full [references](#references) below):
@@ -104,6 +138,33 @@ Every number behind this table (each layer of both sweeps, each of the 11 RNAGym
 [`paper/reference_scores.csv`](paper/reference_scores.csv), next to the records it comes from.
 [docs/CAVEATS.md](docs/CAVEATS.md) explains these points in more detail.
 
+### Figures
+
+The three figures below are drawn from the frozen records in [`paper/`](paper/README.md) by
+[`scripts/readme_figures.py`](scripts/readme_figures.py). They are not copies of the
+manuscript's figures. LOAM models are green; the published comparators are gold.
+
+<img src="assets/last_vs_best_layer.svg" width="760" alt="Dot plot of the 13 models. For gene essentiality AUROC and enzyme-class macro-F1, each model shows its last-layer score as a filled dot and its best-layer score as a ring, with the k-mer floor as a dashed line. Most comparators sit near the EC floor at their last layer and gain mostly at an intermediate layer; LOAM's last-layer EC scores are 0.18 to 0.30.">
+
+*Last-layer and best-layer probe scores for all 13 models, on essentiality (AUROC) and enzyme
+class (macro-F1), against the k-mer floor. The best layer is chosen on the test split, so the
+ring is an upper bound. Source: `paper/reference_scores.csv` (single-layer and layer-sweep
+rows) and `paper/kmer_floor.json`.*
+
+<img src="assets/essentiality_by_layer.svg" width="640" alt="Line chart of gene-essentiality AUROC at every probed layer of the four LOAM models, against relative depth. All four start near 0.48 at the embedding layer, rise steeply in the first layers and reach 0.73 to 0.77 at depth, above the dashed k-mer floor of 0.6531.">
+
+*Gene-essentiality AUROC at every layer of the four LOAM models, plotted against relative depth
+(layer index divided by the last layer's index), with the k-mer floor. Source: the
+`bacbench-essentiality-layer-sweep` rows of `paper/reference_scores.csv` and
+`paper/kmer_floor.json`.*
+
+<img src="assets/rnagym_vs_size.svg" width="640" alt="Scatter of zero-shot RNAGym Spearman correlation against measured parameter count on a log scale. The LOAM models rise from 0.13 at 25M to 0.32 at 624M; Evo 1.5 and Evo2-7B, about ten times larger, reach 0.32 and 0.34.">
+
+*Zero-shot RNAGym Spearman (mean over the 11 assays) against measured parameter count, log
+scale. Causal models are scored by log-likelihood, masked models by masked-marginal LLR (see
+the table above), so the two groups are not scored identically. Source: the `rnagym-dms` rows
+of `paper/reference_scores.csv` and the parameter counts in `paper/models.csv`.*
+
 ## How closely you will reproduce them
 
 - **LOAM:** the weights released on the Hub, run through this repository, reproduce the paper's
@@ -159,6 +220,7 @@ gLMBench/
 ├── specs/          one YAML per model: loam/ (4 LOAM models), external/ (9 published models), echo test doubles
 ├── scripts/        fetch the task data, reproduce the paper, compare with it, compute the k-mer floor
 ├── paper/          the paper's results: records, a flat table of every metric, the k-mer floor
+├── assets/         the README figures, drawn from paper/ by scripts/readme_figures.py
 ├── notebooks/      a LOAM model from the Hub, through the five task rows, compared with the paper
 ├── docs/           the guides listed below
 ├── envs/           conda environments and the exact version pins used for the paper

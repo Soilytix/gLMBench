@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="380" viewBox="0 0 640 380" role="img" aria-labelledby="t d">
+<title id="t">RNAGym Spearman vs parameters</title>
+<desc id="d">Scatter of RNAGym Spearman correlation, averaged over 11 assays with no training, against measured parameter count on a log scale. LOAM models (green, joined by a line) rise from 0.13 at 25M to 0.32 at 624M; Evo 1.5 and Evo2-7B, about ten times larger, reach 0.32 and 0.34. Masked models are scored by masked-marginal LLR, causal ones by log-likelihood.</desc>
+<style>
+  text { font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #29332E; font-size: 12px; }
+  .num { font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 11px; }
+  .muted { fill: #5E6A64; }
+  .title { font-size: 14px; font-weight: 600; }
+  .axis { stroke: #29332E; stroke-width: 1; }
+  .grid { stroke: #29332E; stroke-opacity: 0.12; stroke-width: 1; }
+  .floor { stroke: #5E6A64; stroke-width: 1.2; stroke-dasharray: 5 4; }
+  .link { stroke: #5E6A64; stroke-opacity: 0.5; stroke-width: 1.5; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #E6E9E7; } .muted { fill: #A3ADA8; }
+    .axis { stroke: #E6E9E7; } .grid { stroke: #E6E9E7; }
+    .floor, .link { stroke: #A3ADA8; }
+  }
+</style>
+<text class="title" x="60" y="22">RNAGym variant effects (zero-shot) vs model size</text>
+<line class="grid" x1="60" x2="610" y1="330.0" y2="330.0"/>
+<text class="num muted" x="52" y="334.0" text-anchor="end">0.0</text>
+<line class="grid" x1="60" x2="610" y1="257.5" y2="257.5"/>
+<text class="num muted" x="52" y="261.5" text-anchor="end">0.1</text>
+<line class="grid" x1="60" x2="610" y1="185.0" y2="185.0"/>
+<text class="num muted" x="52" y="189.0" text-anchor="end">0.2</text>
+<line class="grid" x1="60" x2="610" y1="112.5" y2="112.5"/>
+<text class="num muted" x="52" y="116.5" text-anchor="end">0.3</text>
+<line class="grid" x1="60" x2="610" y1="40.0" y2="40.0"/>
+<text class="num muted" x="52" y="44.0" text-anchor="end">0.4</text>
+<text class="num muted" x="254.8" y="348" text-anchor="middle">100M</text>
+<text class="num muted" x="432.4" y="348" text-anchor="middle">1B</text>
+<text class="num muted" x="610.0" y="348" text-anchor="middle">10B</text>
+<text class="num muted" x="77.2" y="348" text-anchor="middle">10M</text>
+<line class="axis" x1="60" x2="610" y1="330" y2="330"/>
+<text x="335.0" y="368" text-anchor="middle">parameters (measured, log scale)</text>
+<text x="16" y="185.0" text-anchor="middle" transform="rotate(-90 16 185.0)">Spearman ρ</text>
+<polyline fill="none" stroke="#384C10" stroke-opacity="0.6" stroke-width="1.5" points="149.4,233.7 257.0,183.0 349.2,133.5 396.1,99.7"/>
+<circle cx="133.1" cy="247.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="139.1" y="263.0" text-anchor="start" font-size="11">ProkBERT-mini</text>
+<circle cx="147.8" cy="236.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="139.8" y="227.0" text-anchor="end" font-size="11">ProkBERT-mini-c</text>
+<circle cx="259.6" cy="252.6" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="267.6" y="256.6" text-anchor="start" font-size="11">NTv3-100M</text>
+<circle cx="268.6" cy="205.4" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="268.6" y="219.4" text-anchor="middle" font-size="11">GenomeOcean-100M</text>
+<circle cx="287.3" cy="282.7" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="287.3" y="296.7" text-anchor="middle" font-size="11">gLM2-150M</text>
+<circle cx="385.0" cy="150.3" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="393.0" y="164.3" text-anchor="start" font-size="11">GenomeOcean-500M</text>
+<circle cx="401.6" cy="260.7" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="409.6" y="264.7" text-anchor="start" font-size="11">gLM2-650M</text>
+<circle cx="576.2" cy="99.3" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="568.2" y="113.3" text-anchor="end" font-size="11">Evo 1.5</text>
+<circle cx="576.6" cy="82.0" r="5" fill="#CA8407" stroke="#CA8407" stroke-width="1"/>
+<text x="568.6" y="73.0" text-anchor="end" font-size="11">Evo2-7B</text>
+<circle cx="149.4" cy="233.7" r="6" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<text x="159.4" y="237.7" text-anchor="start" font-size="11">LOAM-25M</text>
+<circle cx="257.0" cy="183.0" r="6" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<text x="257.0" y="174.0" text-anchor="middle" font-size="11">LOAM-100M</text>
+<circle cx="349.2" cy="133.5" r="6" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<text x="341.2" y="124.5" text-anchor="end" font-size="11">LOAM-340M</text>
+<circle cx="396.1" cy="99.7" r="6" fill="#8EDE3D" stroke="#384C10" stroke-width="1"/>
+<text x="404.1" y="90.7" text-anchor="start" font-size="11">LOAM-624M</text>
+</svg>
